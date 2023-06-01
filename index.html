@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <meta name="description" content="Goit-markup-hw-07" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo_menu">
+          <div class="logo-box">
+            <p class="logotext">SIMPLY CHOCOLATE</p>
+            <svg width="21" height="21">
+              <use href="./images/spraite.svg#icon-chocolate"></use>
+            </svg>
+          </div>
+          <button
+            type="button"
+            class="mobile-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mob-menu"
+            aria-label="Mobile menu"
+          >
+            <svg class="mobile-menu-icon" width="21px" height="14px" aria-label="Menu">
+              <use href="./images/spraite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="header_menu_nav js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu-close js-close-menu" aria-label="Close">
+            <svg class="mobile-menu-icon" aria-label="Close">
+              <use href="./images/spraite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="header_menu">
+            <li>
+              <a class="link menu" href="#home" aria-label="Home">Home</a>
+            </li>
+            <li>
+              <a class="link menu" href="#howtomade" aria-label="How it's made?">How it's made?</a>
+            </li>
+            <li>
+              <a class="link menu" href="#ourproducts" aria-label="Our products">Our products</a>
+            </li>
+            <li>
+              <a class="link menu" href="#topsellers" aria-label="Top sellers">Top sellers</a>
+            </li>
+            <li>
+              <a class="link menu" href="#feedback" aria-label="Chocolate is loved"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li class="social-link">
+              <a
+                class="link icon"
+                href=""
+                target="_blank"
+                rel="noopener no-refferrer"
+                aria-label="Instagram"
+              >
+                <svg width="22px" height="22px" aria-label="Instagram">
+                  <use href="./images/spraite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link">
+              <a
+                class="link icon"
+                href=""
+                target="_blank"
+                rel="noopener no-refferrer"
+                aria-label="Twitter"
+              >
+                <svg width="22" height="22" aria-label="Twitter">
+                  <use href="./images/spraite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main container" id="home">
+      <div class="main-bg">
+        <h1 class="visually-hidden">Greet chocolate</h1>
+        <h3 class="main_text">
+          Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+        </h3>
+        <div class="main_butt">
+          <button class="buynow button_style" type="button">Buy now</button>
+          <a class="howmade button_style" href="#howtomade">How it’s made</a>
+        </div>
+        <p class="main_scroll">scroll down</p>
+        <a class="main_scroll-cont" href="#footer" aria-label="Scroll down">
+          <svg class="main_scroll-icon" aria-label="Scroll">
+            <use href="./images/spraite.svg#icon-scroll"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="about container">
+      <h2 class="visually-hidden">Advantages</h2>
+      <ul class="about_list">
+        <li>
+          <div class="about-icon-box">
+            <svg class="about-icon" width="28" height="28">
+              <use href="./images/spraite.svg#icon-about_1"></use>
+            </svg>
+          </div>
+          <h3 class="about_text">Unsurpassed taste</h3>
+          <p class="about_text_parag">
+            Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is
+            a decadent experience that simply cannot be matched. Savor the richness and complexity
+            of our Unsurpassed Taste and discover a new level of chocolate bliss.
+          </p>
+        </li>
+        <li>
+          <div class="about-icon-box">
+            <svg class="about-icon" width="28" height="28">
+              <use href="./images/spraite.svg#icon-about_2"></use>
+            </svg>
+          </div>
+          <h3 class="about_text">Affordable price</h3>
+          <p class="about_text_parag">
+            Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
+            selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars
+            without sacrificing taste or quality. Browse our selection and indulge in affordable
+            luxury today.
+          </p>
+        </li>
+        <li>
+          <div class="about-icon-box">
+            <svg class="about-icon" width="28" height="28">
+              <use href="./images/spraite.svg#icon-about_3"></use>
+            </svg>
+          </div>
+          <h3 class="about_text">Own production</h3>
+          <p class="about_text_parag">
+            We take pride in our own production process, ensuring that every step is carefully
+            crafted to perfection. From selecting the finest ingredients to handcrafting each piece,
+            our attention to detail is evident in every bite.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="ingradient">
+      <div class="container">
+        <h2 class="ing_text">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="orange_text">TASTE</span> SENSATION
+        </h2>
+        <p class="ing_parag">
+          At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
+          details. From the sourcing of the finest ingredients to the careful crafting of each
+          individual piece, every step of our process adds up to one exceptional taste sensation.
+        </p>
+        <ul class="ing_list">
+          <li class="ing_list_item">
+            <img
+              class="ing_img"
+              src="./images/mobile/ing_1.png"
+              alt="Ingradient 1"
+              loading="lazy"
+              width="224px"
+            />
+            <p class="ing_img_text white">MILK CHOCOLATE</p>
+          </li>
+          <li class="ing_list_item">
+            <img
+              class="ing_img"
+              src="./images/mobile/ing_2.png"
+              alt="Ingradient 2"
+              loading="lazy"
+              width="224px"
+            />
+            <p class="ing_img_text">MILK</p>
+          </li>
+          <li class="ing_list_item">
+            <img
+              class="ing_img"
+              src="./images/mobile/ing_3.png"
+              alt="Ingradient 3"
+              loading="lazy"
+              width="224px"
+            />
+            <p class="ing_img_text white">NUTS</p>
+          </li>
+          <li class="ing_list_item">
+            <img
+              class="ing_img"
+              src="./images/mobile/ing_4.png"
+              alt="Ingradient 4"
+              loading="lazy"
+              width="224px"
+            />
+            <p class="ing_img_text">SEMI - SWEET CHOCOLATE</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container" id="howtomade">
+      <div class="">
+        <h2 class="howtomade_title">HOW IT'S <span class="orange_text">MADE?</span></h2>
+        <div class="howtomade_img">
+          <!-- <img
+            srcset="./images/mobile/howtomade_img.jpg 1x, ./images/mobile/howtomade_img@2x.jpg 2x"
+            src="./images/mobile/howtomade_img.jpg"
+            alt="Chocolate"
+            loading="lazy"
+            width="335"
+          /> -->
+        </div>
+        <div class="howtomade">
+          <h3 class="howtomade_main">
+            Try our chocolates today and discover the perfect balance of flavor
+          </h3>
+          <ul class="howtomade_list">
+            <li class="howtomade_list_item">
+              <span class="howtomade_text">
+                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa
+                powder.
+              </span>
+            </li>
+            <li class="howtomade_list_item">
+              <span class="howtomade_text">
+                At the same time, prepare a water bath. Melt the butter on it.
+              </span>
+            </li>
+            <li class="howtomade_list_item">
+              <span class="howtomade_text">
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone
+                spatula so that the mass becomes uniform and silky.
+              </span>
+            </li>
+            <li class="howtomade_list_item">
+              <span class="howtomade_text"
+                >Heat the mixture over low heat, letting it barely boil.</span
+              >
+            </li>
+            <li class="howtomade_list_item">
+              <span class="howtomade_text">
+                Pour the chocolate into special containers (can be replaced with ice molds). Allow
+                to cool and harden.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="ourproducts" id="ourproducts">
+      <div class="container">
+        <h2 class="ourprod_title">OUR <span class="orange_text">PRODUCTS</span></h2>
+      </div>
+    </section>
+    <section class="topsellers" id="topsellers">
+      <div class="container">
+        <h2 class="topsel_title"><span class="orange_text">TOP</span> SELLERS</h2>
+        <div class="topsel_img">
+          <img
+            srcset="./images/mobile/image1.jpg 1x, ./images/mobile/image1@2x.jpg 2x"
+            src="./images/mobile/image1.jpg"
+            alt="Chocolate 1"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="topseller_text">
+          Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+          Cacao has been around for thousands of years and was first discovered by the Native
+          American tribe called the Mayans.
+        </p>
+        <div class="topsel_img">
+          <img
+            srcset="./images/mobile/image2.jpg 1x, ./images/mobile/image2@2x.jpg 2x"
+            src="./images/mobile/image2.jpg"
+            alt="Chocolate 2"
+            loading="lazy"
+          />
+        </div>
+
+        <button class="buynow button_style" type="button">Buy now</button>
+      </div>
+    </section>
+    <section class="feedback" id="feedback">
+      <div class="container">
+        <h2 class="feedback_title"><span class="orange_text">CHOCOLATE</span> IS LOVED</h2>
+        <div></div>
+        <button class="feed button_style" type="button">Leave a review</button>
+      </div>
+    </section>
+    <section class="subscribe container">
+      <div class="content">
+        <h2 class="subs_main">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <p class="subs_text">
+          From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+          indulgence that will leave you craving more. Made with only the finest ingredients and
+          handcrafted with the utmost care, each piece is a work of art that is sure to please.
+        </p>
+        <button class="subs button_style" type="button">Subscribe</button>
+      </div>
+    </section>
+    <footer class="footer container" id="footer">
+      <h2 class="footer_text">
+        <span class="orange_text">Chocolate</span> a delicious cure for a bad day
+      </h2>
+      <div class="footer_contact_block">
+        <h4 class="footer_contact">Contact us</h4>
+
+        <ul class="icon_block">
+          <li class="social-link">
+            <a
+              class="link"
+              href=""
+              target="_blank"
+              rel="noopener no-refferrer"
+              aria-label="Instagram"
+            >
+              <svg width="22px" height="22px" aria-label="Instagram">
+                <use href="./images/spraite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link">
+            <a
+              class="link"
+              href=""
+              target="_blank"
+              rel="noopener no-refferrer"
+              aria-label="Twitter"
+            >
+              <svg width="22" height="22" aria-label="Twitter">
+                <use href="./images/spraite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Контакт -->
+      <address class="address">
+        <ul class="list nav-menu">
+          <li class="tel">
+            <a class="link contact" href="tel:+380684439426">+380 (68) 443-94-26</a>
+          </li>
+          <li class="email">
+            <a class="link contact" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+          </li>
+        </ul>
+      </address>
+      <nav class="footer_nav_menu">
+        <ul class="footer_menu">
+          <li>
+            <a class="link menu_item" href="#home" aria-label="Home">Home</a>
+          </li>
+          <li>
+            <a class="link menu_item" href="#howtomade" aria-label="How it's made?"
+              >How it's made?</a
+            >
+          </li>
+          <li>
+            <a class="link menu_item" href="#ourproducts" aria-label="Our products">Our products</a>
+          </li>
+          <li>
+            <a class="link menu_item" href="#topsellers" aria-label="Top sellers">Top sellers</a>
+          </li>
+          <li>
+            <a class="link menu_item" href="#feedback" aria-label="Chocolate is loved"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

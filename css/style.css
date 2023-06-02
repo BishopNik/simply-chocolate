@@ -209,6 +209,8 @@ body {
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Секция Main */
+
 .main-bg {
   background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
     url(../images/mobile/chocolate-covered-cocoa-powder.jpg);
@@ -236,6 +238,7 @@ body {
   line-height: 1.2;
   color: var(--color_wh);
   border-radius: 100px;
+  border: none;
 }
 
 .main_text {
@@ -248,15 +251,20 @@ body {
 }
 
 .main_butt {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   gap: 14px;
   margin-top: 32px;
 }
 
+.scroll {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
 .main_scroll {
   display: inline-flex;
-  margin-top: 32px;
   margin-right: 12px;
   font-weight: 500;
   font-size: 12px;
@@ -699,11 +707,121 @@ body {
   color: var(--color_wh);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
+  .break {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 32px;
+    padding-bottom: 72px;
+  }
+
+  /* Секция Main */
+
+  .main-bg {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url(../images/tablet/chocolate-covered-cocoa-powder.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 671px 40px 40px 40px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .main-bg {
+      background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/tablet/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+  }
+
+  .main_text {
+    padding-right: 140px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .button_style {
+    height: 45px;
+  }
+
+  .buynow {
+    width: 144px;
+  }
+
+  .howmade {
+    width: 183px;
+  }
+
+  .topsel_img .buynow {
+    width: 162px;
+  }
+
+  .feed {
+    width: 222px;
+  }
+
+  .subs {
+    width: 172px;
+  }
+
+  .main-button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scroll {
+    margin-left: 149px;
+  }
+
+  .main_scroll {
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .main_scroll-cont {
+    width: 38px;
+    height: 38px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+    padding-bottom: 72px;
+  }
+
+  /* Секция Main */
+
+  .main-bg {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url(../images/desktop/chocolate-covered-cocoa-powder.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 361px 40px 40px 40px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .main-bg {
+      background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/desktop/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+  }
+
+  .main_text {
+    padding-right: 572px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }

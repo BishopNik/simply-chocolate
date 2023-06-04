@@ -573,6 +573,7 @@ body {
 /* Секция Ourproduct */
 
 .ourprod_title {
+  padding-bottom: 32px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -580,6 +581,88 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--maincolorfont);
+}
+
+.ourproducts-item-box {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  overflow: hidden;
+  width: 335px;
+  height: 364px;
+  margin-bottom: 20px;
+}
+
+.ourproducts-item {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  width: 335px;
+  height: 364px;
+  padding: 32px 52px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.ourproducts-item-img {
+  margin-bottom: 8px;
+}
+
+.ourproducts-item-type {
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  transform: rotate(0.44deg);
+}
+
+.ourproducts-item-about {
+  margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.ourproducts-item-price {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 94px;
+  height: 33px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.ourproducts-item-check {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  width: 236px;
+  height: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourproducts-item-check-item {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+}
+
+.active {
+  width: 28px;
+  border-radius: 6.5px;
+  background-color: var(--bg-button);
 }
 
 /* Секция Top Seller */
@@ -1047,6 +1130,8 @@ body {
   border-radius: 50%;
   top: 14px;
   right: 14px;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
 }
 
@@ -1249,6 +1334,23 @@ body {
     padding-right: 70px;
   }
 
+  /* Секция Ourproduct */
+
+  .ourproducts-item-box {
+    width: 735px;
+    margin-bottom: 32px;
+  }
+
+  .ourproducts-item {
+    width: 270px;
+    height: 364px;
+    padding: 32px 20px;
+  }
+
+  .ourproducts-item-check {
+    width: 210px;
+  }
+
   /* Секция Topseller */
 
   .topsel-box-img {
@@ -1356,6 +1458,13 @@ body {
   }
 
   /* Модульное окно */
+
+  .close {
+    top: 21px;
+    right: 21px;
+    width: 14px;
+    height: 14px;
+  }
 
   /* Окно Review */
   .window-review {
@@ -1628,6 +1737,12 @@ body {
   .howtomade_list {
     gap: 24px;
     padding-right: 10px;
+  }
+
+  /* Секция Ourproduct */
+
+  .ourproducts-item-box {
+    width: 1136px;
   }
 
   /* Секция Topseller */

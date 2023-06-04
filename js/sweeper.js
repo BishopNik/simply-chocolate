@@ -24,7 +24,7 @@ checkboxItems.forEach((item, index) => {
     } else if (window.innerWidth >= 768) {
       offset = (containerWidth * (5 / 6) + 18 / 6); // 5/6
     } else {
-      offset = containerWidth; // 100%
+      offset = containerWidth + 18; // 100%
     }
 
     // Позиция элемента внутри контейнера
@@ -39,7 +39,7 @@ checkboxItems.forEach((item, index) => {
 
     // Применяем стиль перехода и трансформации для галереи
     galleryItems.forEach((galleryItem) => {
-      galleryItem.style.transition = 'transform 250ms ease-in-out'; // Добавляем стиль перехода
+      galleryItem.style.transition = 'transform 250ms cubic-bezier(0.4, 0, 0.2, 1)'; // Добавляем стиль перехода
       galleryItem.style.transform = `translateX(${itemPosition}px)`;
     });
   });

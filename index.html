@@ -35,7 +35,6 @@
             type="button"
             class="mobile-menu js-open-menu"
             aria-expanded="false"
-            aria-controls="mob-menu"
             aria-label="Mobile menu"
           >
             <svg class="mobile-menu-icon" width="21px" height="14px" aria-label="Menu">
@@ -633,7 +632,7 @@
               placeholder="Name"
             />
           </label>
-          <label for="Surname">
+          <label for="surname">
             <input
               class="buynow-form-item"
               type="text"
@@ -654,7 +653,8 @@
               title="Please correct email"
             />
           </label>
-          <label for="buynow-phone" style="position: relative">
+          <div style="position: relative">
+            <label for="buynow-phone"></label>
             <div class="phone-prefix">
               <svg class="icon-modal" width="24px" height="18px">
                 <use href="./images/spraite.svg#icon-flag"></use>
@@ -671,8 +671,9 @@
               required
               title="Please correct phone"
             />
-          </label>
-          <label for="buynow-mastercard" style="position: relative">
+          </div>
+          <div style="position: relative">
+            <label for="buynow-mastercard"></label>
             <div class="card-prefix">
               <svg class="icon-modal" width="32px" height="21px">
                 <use href="./images/spraite.svg#icon-mastercard"></use>
@@ -688,17 +689,15 @@
               required
               title="Please correct phone"
             />
-          </label>
+          </div>
           <textarea
             class="buynow-form-item-text"
-            type="text"
             id="buynow-text"
             name="text"
             rows="1"
             placeholder="Enter text"
           ></textarea>
         </form>
-
         <button class="buynow-button" type="button" aria-label="Submit" id="Submit">Submit</button>
       </div>
       <div id="overlay-buynow_w" class="overlay"></div>
@@ -737,7 +736,8 @@
               title="Please correct email"
             />
           </label>
-          <label for="review-phone" style="position: relative">
+          <div style="position: relative">
+            <label for="review-phone"></label>
             <div class="phone-prefix">
               <svg class="icon-modal" width="24px" height="18px">
                 <use href="./images/spraite.svg#icon-flag"></use>
@@ -754,10 +754,9 @@
               required
               title="Please correct phone"
             />
-          </label>
+          </div>
           <textarea
             class="review-form-item-text"
-            type="text"
             id="review-text"
             name="review-text"
             rows="1"

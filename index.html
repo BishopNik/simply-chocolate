@@ -290,8 +290,8 @@
                   src="./images/choco/choco1.jpg"
                   alt="Orange"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Orange</h4>
                 <p class="ourproducts-item-about">Dark chocolate</p>
@@ -306,8 +306,8 @@
                   src="./images/choco/choco2.jpg"
                   alt="APPLE&CRANBERRY"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">APPLE&CRANBERRY</h4>
                 <p class="ourproducts-item-about">Milk chocolate</p>
@@ -322,8 +322,8 @@
                   src="./images/choco/choco3.jpg"
                   alt="Lime&sea salt"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Lime&sea salt</h4>
                 <p class="ourproducts-item-about">Dark chocolate</p>
@@ -338,8 +338,8 @@
                   src="./images/choco/choco4.jpg"
                   alt="Pineapple"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Pineapple</h4>
                 <p class="ourproducts-item-about">Dark chocolate</p>
@@ -354,8 +354,8 @@
                   src="./images/choco/choco5.jpg"
                   alt="Classic"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Classic</h4>
                 <p class="ourproducts-item-about">Milk chocolate</p>
@@ -370,8 +370,8 @@
                   src="./images/choco/choco6.jpg"
                   alt="Honey"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Honey</h4>
                 <p class="ourproducts-item-about">Milk chocolate</p>
@@ -386,8 +386,8 @@
                   src="./images/choco/choco7.jpg"
                   alt="Roasted fruits"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Roasted fruits</h4>
                 <p class="ourproducts-item-about">Dark chocolate</p>
@@ -402,8 +402,8 @@
                   src="./images/choco/choco8.jpg"
                   alt="Classic"
                   loading="lazy"
-                  width="230px"
-                  height="201px"
+                  width="230"
+                  height="201"
                 />
                 <h4 class="ourproducts-item-type">Classic</h4>
                 <p class="ourproducts-item-about">White chocolate</p>
@@ -623,32 +623,38 @@
           </li>
         </ul>
 
-        <form class="review-form" method="post" autocomplete="on">
-          <label for="name">
-            <input class="review-form-item" type="text" id="name" name="name" placeholder="Name" />
+        <form class="buynow-form" method="post" autocomplete="on">
+          <label for="buynow-name">
+            <input
+              class="buynow-form-item"
+              type="text"
+              id="buynow-name"
+              name="buynow-name"
+              placeholder="Name"
+            />
           </label>
           <label for="Surname">
             <input
-              class="review-form-item"
+              class="buynow-form-item"
               type="text"
               id="surname"
               name="surname"
               placeholder="Surname"
             />
           </label>
-          <label for="email">
+          <label for="buynow-email">
             <input
-              class="review-form-item"
+              class="buynow-form-item"
               type="email"
-              id="email"
-              name="email"
+              id="buynow-email"
+              name="buynow-email"
               placeholder="Enter your email"
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               required
               title="Please correct email"
             />
           </label>
-          <label for="phone" style="position: relative">
+          <label for="buynow-phone" style="position: relative">
             <div class="phone-prefix">
               <svg class="icon-modal" width="24px" height="18px">
                 <use href="./images/spraite.svg#icon-flag"></use>
@@ -656,37 +662,37 @@
               <span class="phone-text">+380</span>
             </div>
             <input
-              class="review-form-item"
+              class="buynow-form-item"
               type="tel"
-              id="phone"
-              name="phone"
+              id="buynow-phone"
+              name="buynow-phone"
               placeholder="Phone number"
               pattern="[1-9]{9}"
               required
               title="Please correct phone"
             />
           </label>
-          <label for="phone" style="position: relative">
-            <div class="phone-prefix">
+          <label for="buynow-mastercard" style="position: relative">
+            <div class="card-prefix">
               <svg class="icon-modal" width="32px" height="21px">
                 <use href="./images/spraite.svg#icon-mastercard"></use>
               </svg>
             </div>
             <input
-              class="review-form-item"
+              class="buynow-form-item"
               type="tel"
-              id="phone"
+              id="buynow-mastercard"
               name="phone"
-              placeholder="Phone number"
+              placeholder="Enter card"
               pattern="[1-9]{9}"
               required
               title="Please correct phone"
             />
           </label>
           <textarea
-            class="review-form-item-text"
+            class="buynow-form-item-text"
             type="text"
-            id="text"
+            id="buynow-text"
             name="text"
             rows="1"
             placeholder="Enter text"
@@ -710,22 +716,28 @@
           <span class="orange_text">our chocolate</span>
         </h2>
         <form class="review-form" method="post" autocomplete="on">
-          <label for="name">
-            <input class="review-form-item" type="text" id="name" name="name" placeholder="Name" />
+          <label for="review-name">
+            <input
+              class="review-form-item"
+              type="text"
+              id="review-name"
+              name="review-name"
+              placeholder="Name"
+            />
           </label>
-          <label for="email">
+          <label for="review-email">
             <input
               class="review-form-item"
               type="email"
-              id="email"
-              name="email"
+              id="review-email"
+              name="review-email"
               placeholder="Enter your email"
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               required
               title="Please correct email"
             />
           </label>
-          <label for="phone" style="position: relative">
+          <label for="review-phone" style="position: relative">
             <div class="phone-prefix">
               <svg class="icon-modal" width="24px" height="18px">
                 <use href="./images/spraite.svg#icon-flag"></use>
@@ -735,8 +747,8 @@
             <input
               class="review-form-item"
               type="tel"
-              id="phone"
-              name="phone"
+              id="review-phone"
+              name="review-phone"
               placeholder="Phone number"
               pattern="[1-9]{9}"
               required
@@ -746,8 +758,8 @@
           <textarea
             class="review-form-item-text"
             type="text"
-            id="text"
-            name="text"
+            id="review-text"
+            name="review-text"
             rows="1"
             placeholder="Enter text"
           ></textarea>
@@ -791,11 +803,11 @@
           Explore our<span class="orange_text"><br />new chocolate</span> first!
         </h2>
         <div class="subs-submit">
-          <label for="submitInput"></label>
+          <label for="submitinput"></label>
           <input
             class="subs-input"
             type="email"
-            id="SubmitInput"
+            id="submitinput"
             placeholder="Enter your email"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             required

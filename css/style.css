@@ -955,6 +955,10 @@ body {
   margin-top: 8px;
 }
 
+#buynow-mastercard {
+  padding-right: 41px;
+}
+
 #surname {
   margin: 0;
 }
@@ -996,14 +1000,19 @@ body {
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
 
-.buynow-form .phone-prefix {
+.phone-prefix {
   top: calc(50% + 12px);
 }
 
-.card-prefix {
+.card-prefix .icon-modal {
   position: absolute;
   right: 14px;
-  top: 50%;
+  top: calc(50% + 4px);
+  z-index: 9;
+}
+
+.buynow-form .card-prefix .icon-modal {
+  stroke: transparent;
 }
 
 .buynow-button {
@@ -1088,6 +1097,10 @@ body {
 
 #review-phone {
   padding-left: 106px;
+}
+
+.review-form .phone-prefix {
+  top: 50%;
 }
 
 .review-button {
@@ -1581,6 +1594,81 @@ body {
     height: 14px;
   }
 
+  .window-buynow {
+    width: 609px;
+    height: 1058px;
+    padding: 48px;
+  }
+
+  .buynow-goods {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .buy_img {
+    width: 120px;
+    height: 111px;
+  }
+
+  .buynow-goods-weight {
+    width: 96px;
+    height: 33px;
+  }
+
+  .buynow-goods-items {
+    flex-direction: column;
+    height: 196px;
+    padding: 20px 21px 18px;
+  }
+
+  .buynow-form-contact-info {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .buynow-form-item {
+    width: 513px;
+    height: 66px;
+    border-radius: 13px;
+    font-size: 18px;
+    line-height: 1.22;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .buynow-form-label {
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  #buynow-mastercard {
+    padding-right: 84px;
+  }
+
+  #buynow-name,
+  #surname {
+    width: 246px;
+  }
+
+  .buynow-form-item-text {
+    height: 137px;
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .buynow-form .card-prefix .icon-modal {
+    right: 31px;
+    width: 31px;
+    height: 19px;
+  }
+
+  .buynow-button {
+    left: 48px;
+    bottom: 48px;
+  }
+
   /* Окно Review */
   .window-review {
     width: 517px;
@@ -1627,9 +1715,14 @@ body {
   .phone-prefix {
     gap: 18px;
     left: 24px;
-    width: 125px;
     height: 32px;
     padding-right: 32px;
+    top: calc(50% + 15px);
+  }
+
+  #buynow-phone {
+    padding-left: 177px;
+    padding-right: 24px;
   }
 
   #review-phone {

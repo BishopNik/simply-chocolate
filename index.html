@@ -572,7 +572,7 @@
       </nav>
     </footer>
     <!-- Модальные окна -->
-    <div id="buynow" class="modal is-open">
+    <div id="buynow" class="modal">
       <div class="window-buynow">
         <button class="close" type="button" aria-label="Close">
           <svg class="icon-modal">
@@ -678,8 +678,8 @@
           <div style="position: relative">
             <p class="buynow-form-label">Card number</p>
             <div class="card-prefix">
-              <svg class="icon-modal" width="24px" height="18px">
-                <use href="./images/spraite.svg#icon-flag"></use>
+              <svg class="icon-modal" width="22px" height="12px">
+                <use href="./images/spraite.svg#icon-mastercard"></use>
               </svg>
             </div>
             <input
@@ -693,8 +693,7 @@
               title="Please correct phone"
             />
           </div>
-          <div>
-            <p class="buynow-form-label">Comment</p>
+            <label class="buynow-form-label">Comment
             <textarea
               class="buynow-form-item-text"
               id="buynow-text"
@@ -702,13 +701,12 @@
               rows="1"
               placeholder="Enter text">
             </textarea>
-          </div>
+            </label>
         </form>
         <button class="buynow-button" type="button" aria-label="Submit" id="Submit">Submit</button>
       </div>
       <div id="overlay-buynow_w" class="overlay"></div>
     </div>
-
     <div id="review" class="modal">
       <div class="window-review">
         <button class="close" type="button" aria-label="Close">

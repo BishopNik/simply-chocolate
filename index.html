@@ -440,7 +440,7 @@
                   srcset="./images/desktop/image1.jpg 1x, ./images/desktop/image1@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/desktop/image1.jpg " alt="Chocolate 1" loading="lazy" />
+                <img src="./images/desktop/image1.jpg" alt="Chocolate 1" loading="lazy" />
               </picture>
             </div>
             <p class="topsel_text">
@@ -462,7 +462,7 @@
                   srcset="./images/desktop/image2.jpg 1x, ./images/desktop/image2@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/desktop/image2.jpg " alt="Chocolate 2" loading="lazy" />
+                <img src="./images/desktop/image2.jpg" alt="Chocolate 2" loading="lazy" />
               </picture>
             </div>
             <div class="topsel_img img3">
@@ -480,7 +480,67 @@
       <section class="feedback" id="feedback">
         <div class="container">
           <h2 class="feedback_title"><span class="orange_text">CHOCOLATE</span> IS LOVED</h2>
-          <div></div>
+          <ul class="feedback-item-box">
+            <l1>
+              <div class="feedback-item">
+                <img
+                  class="feedback-item-img"
+                  srcset="./images/review/victoria.jpg 1x, ./images/review/victoria@2x.jpg 2x"
+                  src="./images/review/victoria.jpg"
+                  alt="Victoria"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                />
+                <h4 class="feedback-item-name">Victoria Dobrzhanska</h4>
+                <p class="feedback-item-feed">
+                  I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+                  thin layer chocolate.
+                </p>
+              </div>
+            </l1>
+            <l1>
+              <div class="feedback-item">
+                <img
+                  class="feedback-item-img"
+                  srcset="./images/review/nazar.jpg 1x, ./images/review/nazar@2x.jpg 2x"
+                  src="./images/review/nazar.jpg"
+                  alt="Nazar"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                />
+                <h4 class="feedback-item-name">Victoria Dobrzhanska</h4>
+                <p class="feedback-item-feed">
+                  I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+                  thin layer chocolate.
+                </p>
+              </div>
+            </l1>
+            <l1>
+              <div class="feedback-item">
+                <img
+                  class="feedback-item-img"
+                  srcset="./images/review/olena.jpg 1x, ./images/review/olena@2x.jpg 2x"
+                  src="./images/review/olena.jpg"
+                  alt="Olena"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                />
+                <h4 class="feedback-item-name">Victoria Dobrzhanska</h4>
+                <p class="feedback-item-feed">
+                  I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+                  thin layer chocolate.
+                </p>
+              </div></l1
+            >
+          </ul>
+          <ul class="feedback-item-check">
+            <li class="feedback-item-check-item active"></li>
+            <li class="feedback-item-check-item"></li>
+            <li class="feedback-item-check-item"></li>
+          </ul>
           <button class="feed button_style" type="button" id="open-review">Leave a review</button>
         </div>
       </section>
@@ -662,18 +722,17 @@
               </svg>
               <span class="phone-text">+380</span>
             </div>
-            <p class="buynow-form-label">Phone number</p>            
-              <input
-                class="buynow-form-item"
-                type="tel"
-                id="buynow-phone"
-                name="buynow-phone"
-                placeholder="Phone number"
-                pattern="[1-9]{9}"
-                required
-                title="Please correct phone"
-              />
-            </label>
+            <p class="buynow-form-label">Phone number</p>
+            <input
+              class="buynow-form-item"
+              type="tel"
+              id="buynow-phone"
+              name="buynow-phone"
+              placeholder="Phone number"
+              pattern="[1-9]{9}"
+              required
+              title="Please correct phone"
+            />
           </div>
           <div style="position: relative">
             <p class="buynow-form-label">Card number</p>
@@ -693,15 +752,17 @@
               title="Please correct phone"
             />
           </div>
-            <label class="buynow-form-label">Comment
+          <label class="buynow-form-label"
+            >Comment
             <textarea
               class="buynow-form-item-text"
               id="buynow-text"
               name="text"
               rows="1"
-              placeholder="Enter text">
+              placeholder="Enter text"
+            >
             </textarea>
-            </label>
+          </label>
         </form>
         <button class="buynow-button" type="button" aria-label="Submit" id="Submit">Submit</button>
       </div>
@@ -831,6 +892,7 @@
     ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/sweeper.js"></script>
+    <script src="./js/sweeper-topseller.js"></script>
+    <script src="./js/sweeper-review.js"></script>
   </body>
 </html>

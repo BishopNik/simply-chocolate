@@ -261,14 +261,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 41px;
-  padding: o;
+  padding: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
   color: var(--color_wh);
   border-radius: 100px;
-  border: none;
 }
 
 .main_text {
@@ -646,6 +645,7 @@ body {
   line-height: 1.2;
 }
 
+.feedback-item-check,
 .ourproducts-item-check {
   display: flex;
   justify-content: center;
@@ -656,6 +656,15 @@ body {
   margin-right: auto;
 }
 
+.feedback-item-check {
+  padding-bottom: 50px;
+}
+
+.feedback-item-check {
+  width: 106px;
+}
+
+.feedback-item-check-item,
 .ourproducts-item-check-item {
   cursor: pointer;
   width: 13px;
@@ -705,7 +714,7 @@ body {
 /* Секция Feedback */
 
 .feedback_title {
-  margin-bottom: 32px;
+  margin-bottom: 74px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -713,6 +722,56 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--maincolorfont);
+}
+
+.feedback-item-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  height: 275px;
+  overflow: hidden;
+}
+
+.feedback-item {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: 335px;
+  height: 200px;
+  left: 0;
+  top: 42px;
+  background: var(--color_wh);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+
+.feedback-item-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.feedback-item-name {
+  padding-top: 56px;
+  text-align: center;
+}
+
+.feedback-item-feed {
+  padding: 24px 18px 0;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.feedback-item-check {
+}
+
+.feedback-item-check-item {
 }
 
 /* Секция Subscribe */
@@ -964,8 +1023,7 @@ body {
 }
 
 .buynow-form-item-text {
-  border: none;
-  outline: 1.5px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   text-align: start;
@@ -1508,6 +1566,16 @@ body {
     bottom: 140px;
   }
 
+  /* Секция Feedback */
+
+  .feedback-item-box {
+    gap: 16px;
+  }
+
+  .feedback-item {
+    width: 344px;
+  }
+
   /* Секция Subscribe */
 
   .subs_main {
@@ -1976,6 +2044,16 @@ body {
 
   .topsellers .buynow {
     bottom: 150px;
+  }
+
+  /* Секция Feedback */
+
+  .feedback-item-box {
+    gap: 28px;
+  }
+
+  .feedback-item {
+    width: 360px;
   }
 
   /* Секция Subscribe */

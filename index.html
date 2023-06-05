@@ -621,27 +621,29 @@
             <div class="buynow-goods-weight">300 g</div>
           </li>
         </ul>
-
         <form class="buynow-form" method="post" autocomplete="on">
-          <label for="buynow-name">
-            <input
-              class="buynow-form-item"
-              type="text"
-              id="buynow-name"
-              name="buynow-name"
-              placeholder="Name"
-            />
-          </label>
-          <label for="surname">
-            <input
-              class="buynow-form-item"
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Surname"
-            />
-          </label>
-          <label for="buynow-email">
+          <div class="buynow-form-contact-info">
+            <label for="buynow-name" class="buynow-form-label">
+              Personal information
+              <input
+                class="buynow-form-item"
+                type="text"
+                id="buynow-name"
+                name="buynow-name"
+                placeholder="Name"
+              />
+            </label>
+            <label for="surname">
+              <input
+                class="buynow-form-item"
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Surname"
+            /></label>
+          </div>
+          <label for="buynow-email" class="buynow-form-label">
+            Email
             <input
               class="buynow-form-item"
               type="email"
@@ -654,29 +656,30 @@
             />
           </label>
           <div style="position: relative">
-            <label for="buynow-phone"></label>
             <div class="phone-prefix">
               <svg class="icon-modal" width="24px" height="18px">
                 <use href="./images/spraite.svg#icon-flag"></use>
               </svg>
               <span class="phone-text">+380</span>
             </div>
-            <input
-              class="buynow-form-item"
-              type="tel"
-              id="buynow-phone"
-              name="buynow-phone"
-              placeholder="Phone number"
-              pattern="[1-9]{9}"
-              required
-              title="Please correct phone"
-            />
+            <p class="buynow-form-label">Phone number</p>            
+              <input
+                class="buynow-form-item"
+                type="tel"
+                id="buynow-phone"
+                name="buynow-phone"
+                placeholder="Phone number"
+                pattern="[1-9]{9}"
+                required
+                title="Please correct phone"
+              />
+            </label>
           </div>
           <div style="position: relative">
-            <label for="buynow-mastercard"></label>
+            <p class="buynow-form-label">Card number</p>
             <div class="card-prefix">
-              <svg class="icon-modal" width="32px" height="21px">
-                <use href="./images/spraite.svg#icon-mastercard"></use>
+              <svg class="icon-modal" width="24px" height="18px">
+                <use href="./images/spraite.svg#icon-flag"></use>
               </svg>
             </div>
             <input
@@ -685,18 +688,21 @@
               id="buynow-mastercard"
               name="phone"
               placeholder="Enter card"
-              pattern="[1-9]{9}"
+              pattern="[0-9]{16}"
               required
               title="Please correct phone"
             />
           </div>
-          <textarea
-            class="buynow-form-item-text"
-            id="buynow-text"
-            name="text"
-            rows="1"
-            placeholder="Enter text"
-          ></textarea>
+          <div>
+            <p class="buynow-form-label">Comment</p>
+            <textarea
+              class="buynow-form-item-text"
+              id="buynow-text"
+              name="text"
+              rows="1"
+              placeholder="Enter text">
+            </textarea>
+          </div>
         </form>
         <button class="buynow-button" type="button" aria-label="Submit" id="Submit">Submit</button>
       </div>

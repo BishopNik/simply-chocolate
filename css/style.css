@@ -477,23 +477,148 @@ body {
 }
 
 .ing_list_item {
-  padding: 28px 28px 0 28px;
-  max-width: 335px;
+  position: relative;
+  width: 335px;
   height: 270px;
   border-radius: 15px;
-  outline: 1px solid var(--bg-button);
-  overflow: hidden;
-  background-color: white;
 }
 
-.ing_list_item:nth-child(1) {
+.ing_list_item-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  border: 1px solid var(--bg-button);
+  overflow: hidden;
+  background-color: white;
+  opacity: 1;
+}
+
+.ing_list_item-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 28px;
+  border: 1px solid var(--bg-button);
+  opacity: 0;
+}
+
+.ing_list_item-about-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.ing_list_item-about-buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.ing_list_item-about-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bg-button);
+  border-radius: 35px;
+  font-size: 10px;
+  line-height: 1.2;
+  padding: 6px 16px;
+}
+
+.ing_list_item-about-button:nth-child(1) {
+  background-color: var(--bg-button);
+  color: var(--color_wh);
+}
+
+.ing_list_item-about-text {
+  overflow: overlay;
+  height: 162px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.ing_list_item:nth-child(4) .ing_list_item-about-text {
+  height: 146px;
+}
+
+.ing_list_item:nth-child(1) .ing_list_item-main {
   background-color: var(--bg-button);
 }
 
-.ing_list_item:nth-child(3) {
+.ing_list_item:nth-child(3) .ing_list_item-main {
+  background-color: var(--bgfooter);
+  border: 1px solid var(--bgfooter);
+}
+
+.ing_list_item-main:nth-child(3) {
   background-color: var(--bgfooter);
   outline: 1px solid var(--bgfooter);
 }
+
+/* Анимация */
+
+@keyframes spiral-right-rotation {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+    scale: 1;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+    scale: 0;
+  }
+}
+
+@keyframes spiral-left-rotation {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    transform: rotate(-720deg);
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.ing_list_item-main {
+  animation: spiral-left-rotation 1500ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  transition: transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+
+.ing_list_item-about {
+  animation: spiral-right-rotation 1500ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+
+.ing_list_item:hover .ing_list_item-main {
+  animation: spiral-right-rotation 1500ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  animation-fill-mode: forwards;
+}
+
+.ing_list_item:hover .ing_list_item-about {
+  animation: spiral-left-rotation 1500ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  animation-fill-mode: forwards;
+}
+
+/* End */
 
 .ing_img {
   margin-bottom: 25px;
@@ -669,7 +794,7 @@ body {
   cursor: pointer;
   width: 13px;
   height: 13px;
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
   border-radius: 50%;
 }
 
@@ -766,12 +891,6 @@ body {
   text-align: center;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
-}
-
-.feedback-item-check {
-}
-
-.feedback-item-check-item {
 }
 
 /* Секция Subscribe */
@@ -1966,11 +2085,19 @@ body {
 
   .ing_list {
     gap: 19px;
-    width: 1136px;
+    width: 1137px;
   }
 
   .ing_list_item {
-    max-width: calc((100% - 19px * 3) / 4);
+    width: calc((100% - 19px * 3) / 4);
+  }
+
+  .ing_list_item-about {
+    padding: 20px;
+  }
+
+  .ing_list_item:nth-child(4) .ing_list_item-about-text {
+    height: 128px;
   }
 
   /* Секция How made */
@@ -2054,6 +2181,10 @@ body {
 
   .feedback-item {
     width: 360px;
+  }
+
+  .feedback-item-check-item.active {
+    background-color: rgba(17, 17, 17, 0.1);
   }
 
   /* Секция Subscribe */

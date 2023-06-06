@@ -40,7 +40,11 @@ checkboxItemsFeedback.forEach((item, index) => {
     // Применяем стиль перехода и трансформации для галереи
     galleryItemsFeedback.forEach((galleryItemFeedback) => {
       galleryItemFeedback.style.transition = 'transform 250ms cubic-bezier(0.4, 0, 0.2, 1)'; // Добавляем стиль перехода
-      galleryItemFeedback.style.transform = `translateX(${itemPositionFeedback}px)`;
+      
+      // Проверяем размер экрана перед установкой стиля трансформации
+      if (window.innerWidth <= 1200) {
+        galleryItemFeedback.style.transform = `translateX(${itemPositionFeedback}px)`;
+      }
     });
   });
 });

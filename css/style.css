@@ -1944,6 +1944,8 @@ body {
     height: 52px;
     padding-left: 18px;
     padding-right: 18px;
+    font-size: 18px;
+    line-height: 1.22;
   }
 
   .subs-button {

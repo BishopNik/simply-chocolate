@@ -517,7 +517,8 @@ body {
   height: 100%;
   border-radius: 15px;
   padding: 28px;
-  border: 1px solid var(--bg-button);
+  /* border: 1px solid var(--bg-button); */
+  background-color: var(--color_wh);
   opacity: 0;
 }
 

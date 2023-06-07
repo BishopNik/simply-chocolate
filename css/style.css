@@ -1503,6 +1503,28 @@ body {
   stroke: none;
 }
 
+@media screen and (max-width: 320px) {
+  .ourproducts-item-box {
+    width: 95%;
+  }
+
+  .ourproducts-item {
+    width: 290px;
+  }
+
+  .ing_list_item {
+    width: 95%;
+  }
+
+  .howtomade_img {
+    max-width: 95%;
+  }
+
+  .feedback-item {
+    width: 280px;
+  }
+}
+
 @media screen and (max-width: 374px) {
   .main-butt {
     flex-direction: column;

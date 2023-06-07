@@ -2100,7 +2100,7 @@ body {
     flex-direction: row;
     transform: none;
     width: 735px;
-    background-color: var(--bgcolor);
+    background-color: var(--color_wh);
   }
 
   .logo_menu {
@@ -2117,6 +2117,15 @@ body {
 
   .header_menu-item .link {
     color: var(--maincolorfont);
+  }
+
+  .header > .container {
+    position: fixed;
+    left: 50%;
+    background-color: var(--color_wh);
+    z-index: 30;
+    transform: translateX(-50%);
+    width: 1200px;
   }
 
   .mobile-menu-close {

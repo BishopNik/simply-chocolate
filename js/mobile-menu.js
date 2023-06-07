@@ -16,6 +16,24 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
+  const closeMenu = () => {
+    openMenuBtn.setAttribute('aria-expanded', false);
+    mobileMenu.classList.remove('is-open-mob');
+    bodyScrollLock.enableBodyScroll(document.body);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (!mobileMenu.contains(event.target) && !openMenuBtn.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  const handleEscKey = (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+    }
+  };
+
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
@@ -23,11 +41,12 @@
     item.addEventListener('click', toggleMenu);
   });
 
+  document.addEventListener('click', handleOutsideClick);
+  document.addEventListener('keydown', handleEscKey);
+
   // Закрытие мобильного меню на широких экранах при изменении ориентации устройства
   window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
     if (!e.matches) return;
-    mobileMenu.classList.remove('is-open-mob');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    closeMenu();
   });
 })();

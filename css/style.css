@@ -1093,8 +1093,9 @@ body {
   border-radius: 50%;
   top: 14px;
   right: 14px;
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   background-color: transparent;
 }
 
@@ -1102,7 +1103,7 @@ body {
 .window-buynow {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 300px;
   transform: translate(-50%, 0);
   background-color: var(--bgcolor);
   z-index: 998;
@@ -1112,14 +1113,14 @@ body {
   border-radius: 15px;
   overflow: scroll;
   /* scale: 0;
-  transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1); */
   transform: skew(180deg, 0deg);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-open .window-buynow {
-  /* scale: 1;
-  transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* scale: 1; */
+  /* transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1); */
   transform: skew(0deg, 0deg);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1455,20 +1456,29 @@ body {
 }
 
 .window-subs .icon-modal {
+  width: 12px;
+  height: 12px;
   stroke: var(--color_wh);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .window-buynow .icon-modal,
 .window-review .icon-modal {
+  width: 12px;
+  height: 12px;
   stroke: var(--maincolorfont);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-modal:hover,
-.icon-modal:focus {
+.close:hover .icon-modal,
+.close:hover .icon-modal {
   stroke: var(--bg-button);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close:hover,
+.close:focus {
+  background-color: var(--bg-button_hover);
 }
 
 .modal .phone-prefix .icon-modal {
@@ -1815,6 +1825,17 @@ body {
   .close {
     top: 21px;
     right: 21px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .window-subs .icon-modal {
+    width: 14px;
+    height: 14px;
+  }
+
+  .window-buynow .icon-modal,
+  .window-review .icon-modal {
     width: 14px;
     height: 14px;
   }

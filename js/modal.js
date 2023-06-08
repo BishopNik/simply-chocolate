@@ -31,8 +31,11 @@ document.addEventListener("keydown", function(event) {
 // Закрытие при клике вне окна или на overlay
 const overlays = document.querySelectorAll(".overlay");
 for (const overlay of overlays) {
-  overlay.addEventListener("click", closeModal);
-};
+  overlay.addEventListener("click", function(event) { // Добавлен параметр event
+    closeModal(); // Передача объекта события в функцию closeModal()
+  });
+}
+
 
 // Функция для открытия модального окна
 function openModal(modalNumber) {
@@ -71,17 +74,11 @@ function closeModal() {
   }
   
   const buyOverlay = document.getElementById("overlay-buynow_w");
-  if (!buyOverlay.contains(event.target)) {
     buyOverlay.classList.remove("is-visible");
-  }
   
   const reviewOverlay = document.getElementById("overlay-review_w");
-  if (!reviewOverlay.contains(event.target)) {
     reviewOverlay.classList.remove("is-visible");
-  }
   
   const subsOverlay = document.getElementById("overlay-subs_w");
-  if (!subsOverlay.contains(event.target)) {
     subsOverlay.classList.remove("is-visible");
-  };
 }

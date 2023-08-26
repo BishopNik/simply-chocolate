@@ -1,965 +1,1125 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simply Chocolate</title>
-    <meta name="description" content="Goit-commadn project" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="logo_menu">
-          <div class="logo-box">
-            <p class="logotext">SIMPLY CHOCOLATE</p>
-            <svg class="logo-svg">
-              <use href="./images/spraite.svg#icon-chocolate"></use>
-            </svg>
-          </div>
-          <button
-            type="button"
-            class="mobile-menu js-open-menu"
-            aria-expanded="false"
-            aria-label="Mobile menu"
-          >
-            <svg class="mobile-menu-icon" width="21px" height="14px" aria-label="Menu">
-              <use href="./images/spraite.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
-        <nav class="header_menu_nav js-menu-container" id="mobile-menu">
-          <button type="button" class="mobile-menu-close js-close-menu" aria-label="Close">
-            <svg class="mobile-menu-icon" aria-label="Close">
-              <use href="./images/spraite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="header_menu">
-            <li class="header_menu-item js-menu-item">
-              <a class="link" href="#home" aria-label="Home">Home</a>
-            </li>
-            <li class="header_menu-item js-menu-item">
-              <a class="link" href="#howtomade" aria-label="How it's made?">How it's made?</a>
-            </li>
-            <li class="header_menu-item js-menu-item">
-              <a class="link" href="#ourproducts" aria-label="Our products">Our products</a>
-            </li>
-            <li class="header_menu-item js-menu-item">
-              <a class="link" href="#topsellers" aria-label="Top sellers">Top sellers</a>
-            </li>
-            <li class="header_menu-item js-menu-item">
-              <a class="link" href="#feedback" aria-label="Chocolate is loved"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-          <ul class="social-links">
-            <li class="social-link">
-              <a
-                class="link icon"
-                href=""
-                target="_blank"
-                rel="noopener no-refferrer"
-                aria-label="Instagram"
-              >
-                <svg class="social-svg" aria-label="Instagram">
-                  <use href="./images/spraite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link">
-              <a
-                class="link icon"
-                href=""
-                target="_blank"
-                rel="noopener no-refferrer"
-                aria-label="Twitter"
-              >
-                <svg class="social-svg" aria-label="Twitter">
-                  <use href="./images/spraite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="main container" id="home">
-        <div class="main-bg">
-          <h1 class="visually-hidden">Greet chocolate</h1>
-          <h3 class="main-text">
-            Treat yourself or a loved one to <span class="break"><br /></span>our finest ingredients
-            for a moment of pure delight!
-          </h3>
-          <ul class="main-button">
-            <li class="main-butt">
-              <button class="buynow button_style" type="button" id="open-buynow1">Buy now</button>
-              <a class="howmade button_style" href="#howtomade">How it's made</a>
-            </li>
-            <li class="main-scroll-block">
-              <p class="main-scroll">scroll down</p>
-              <a class="main-scroll-cont" href="#footer" aria-label="Scroll down">
-                <svg class="main-scroll-icon" aria-label="Scroll">
-                  <use href="./images/spraite.svg#icon-scroll"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="about container">
-        <h2 class="visually-hidden">Advantages</h2>
-        <ul class="about_list">
-          <li class="about_list-item">
-            <div class="about-icon-box">
-              <svg class="about-icon" width="28" height="28">
-                <use href="./images/spraite.svg#icon-about_1"></use>
-              </svg>
-            </div>
-            <h3 class="about_text">Unsurpassed taste</h3>
-            <p class="about_text_parag">
-              Crafted with the finest quality cocoa beans and a dedication to perfection, each bite
-              is a decadent experience that simply cannot be matched. Savor the richness and
-              complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
-            </p>
-          </li>
-          <li class="about_list-item">
-            <div class="about-icon-box">
-              <svg class="about-icon" width="28" height="28">
-                <use href="./images/spraite.svg#icon-about_2"></use>
-              </svg>
-            </div>
-            <h3 class="about_text">Affordable price</h3>
-            <p class="about_text_parag">
-              Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
-              selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
-              bars without sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
-          </li>
-          <li class="about_list-item">
-            <div class="about-icon-box">
-              <svg class="about-icon" width="28" height="28">
-                <use href="./images/spraite.svg#icon-about_3"></use>
-              </svg>
-            </div>
-            <h3 class="about_text">Own production</h3>
-            <p class="about_text_parag">
-              We take pride in our own production process, ensuring that every step is carefully
-              crafted to perfection. From selecting the finest ingredients to handcrafting each
-              piece, our attention to detail is evident in every bite.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="ingradient">
-        <div class="container">
-          <h2 class="ing_text">
-            IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="orange_text">TASTE</span> SENSATION
-          </h2>
-          <p class="ing_parag">
-            At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
-            details. From the sourcing of the finest ingredients to the careful crafting of each
-            individual piece, every step of our process adds up to one exceptional taste sensation.
-          </p>
-          <ul class="ing_list">
-            <li class="ing_list_item">
-              <div class="ing_list_item-main">
-                <picture>
-                  <source srcset="./images/mobile/ing_1.png" media="(max-width: 1199px)" />
-                  <source srcset="./images/desktop/ing_1.png" media="(min-width: 1200px)" />
-                  <img
-                    class="ing_img"
-                    src="./images/desktop/ing_1.png"
-                    alt="Ingradient 1"
-                    loading="lazy"
-                  />
-                </picture>
-                <p class="ing_img_text white">MILK CHOCOLATE</p>
-              </div>
-              <div class="ing_list_item-about">
-                <h4 class="ing_list_item-about-title">Milk Chocolate</h4>
-                <ul class="ing_list_item-about-buttons">
-                  <li class="ing_list_item-about-button">chocolate</li>
-                  <li class="ing_list_item-about-button">the benefits</li>
-                </ul>
-                <p class="ing_list_item-about-text">
-                  Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and
-                  milk. It is the most consumed type of chocolate. Chocolate was originally sold and
-                  consumed as a beverage in pre-Columbian times. Although four-fifths of all milk
-                  chocolate is sold in the United States and Europe.
-                </p>
-              </div>
-            </li>
-            <li class="ing_list_item">
-              <div class="ing_list_item-main">
-                <picture>
-                  <source srcset="./images/mobile/ing_2.png" media="(max-width: 1199px)" />
-                  <source srcset="./images/desktop/ing_2.png" media="(min-width: 1200px)" />
-                  <img
-                    class="ing_img"
-                    src="./images/desktop/ing_2.png"
-                    alt="Ingradient 2"
-                    loading="lazy"
-                  />
-                </picture>
-                <p class="ing_img_text">MILK</p>
-              </div>
-              <div class="ing_list_item-about">
-                <h4 class="ing_list_item-about-title">Milk</h4>
-                <ul class="ing_list_item-about-buttons">
-                  <li class="ing_list_item-about-button">Milk</li>
-                  <li class="ing_list_item-about-button">the benefits</li>
-                </ul>
-                <p class="ing_list_item-about-text">
-                  Milk is a white liquid food produced by the mammary glands of mammals. It is the
-                  primary source of nutrition for young mammals (including breastfed human infants)
-                  before they are able to digest solid food.Early-lactation milk, which is called
-                  colostrum, contains antibodies that strengthen the immune system.
-                </p>
-              </div>
-            </li>
-            <li class="ing_list_item">
-              <div class="ing_list_item-main">
-                <picture>
-                  <source srcset="./images/mobile/ing_3.png" media="(max-width: 1199px)" />
-                  <source srcset="./images/desktop/ing_3.png" media="(min-width: 1200px)" />
-                  <img
-                    class="ing_img"
-                    src="./images/desktop/ing_3.png"
-                    alt="Ingradient 3"
-                    loading="lazy"
-                  />
-                </picture>
-                <p class="ing_img_text white">NUTS</p>
-              </div>
-              <div class="ing_list_item-about">
-                <h4 class="ing_list_item-about-title">Nuts</h4>
-                <ul class="ing_list_item-about-buttons">
-                  <li class="ing_list_item-about-button">nuts</li>
-                  <li class="ing_list_item-about-button">the benefits</li>
-                </ul>
-                <p class="ing_list_item-about-text">
-                  Almonds, pistachios, and walnuts are some types of nuts that contain healthy
-                  nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer
-                  benefits such as reducing your risk of heart disease. They’re a good source of
-                  fiber, healthy fats, and plant protein. Plus, they’re great on their own.
-                </p>
-              </div>
-            </li>
-            <li class="ing_list_item">
-              <div class="ing_list_item-main">
-                <picture>
-                  <source srcset="./images/mobile/ing_4.png" media="(max-width: 1199px)" />
-                  <source srcset="./images/desktop/ing_4.png" media="(min-width: 1200px)" />
-                  <img
-                    class="ing_img"
-                    src="./images/desktop/ing_4.png"
-                    alt="Ingradient 4"
-                    loading="lazy"
-                  />
-                </picture>
-                <p class="ing_img_text">SEMI - SWEET CHOCOLATE</p>
-              </div>
-              <div class="ing_list_item-about">
-                <h4 class="ing_list_item-about-title">Semi - sweet chocolate</h4>
-                <ul class="ing_list_item-about-buttons">
-                  <li class="ing_list_item-about-button">sweet chocolate</li>
-                  <li class="ing_list_item-about-button">the benefits</li>
-                </ul>
-                <p class="ing_list_item-about-text">
-                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways
-                  to gain an understanding of this type of chocolate is to compare it to a different
-                  type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison,
-                  it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="container" id="howtomade">
-        <div class="">
-          <h2 class="howtomade_title">HOW IT'S <span class="orange_text">MADE?</span></h2>
-          <div class="howtomade_content">
-            <div class="howtomade_img">
-              <iframe
-                src="https://player.vimeo.com/video/679987878?h=9d9971d226&color=ffffff&title=0&byline=0&portrait=0"
-                width="711"
-                height="400"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-              ></iframe>
-            </div>
-            <div class="howtomade">
-              <h3 class="howtomade_main">
-                Try our chocolates today and <span class="break"><br /></span>discover the perfect
-                balance of flavor
-              </h3>
-              <ul class="howtomade_list">
-                <li class="howtomade_list_item">
-                  <span class="howtomade_text">
-                    Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa
-                    powder.
-                  </span>
-                </li>
-                <li class="howtomade_list_item">
-                  <span class="howtomade_text">
-                    At the same time, prepare a water bath. Melt the butter on it.
-                  </span>
-                </li>
-                <li class="howtomade_list_item">
-                  <span class="howtomade_text">
-                    "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone
-                    spatula so that the mass becomes uniform and silky.
-                  </span>
-                </li>
-                <li class="howtomade_list_item">
-                  <span class="howtomade_text"
-                    >Heat the mixture over low heat, letting it barely boil.</span
-                  >
-                </li>
-                <li class="howtomade_list_item">
-                  <span class="howtomade_text">
-                    Pour the chocolate into special containers (can be replaced with ice molds).
-                    Allow to cool and harden.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="ourproducts" id="ourproducts">
-        <div class="container">
-          <h2 class="ourprod_title">OUR <span class="orange_text">PRODUCTS</span></h2>
-          <ul class="ourproducts-item-box">
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco1.jpg 1x, ./images/choco/choco1@2x.jpg 2x"
-                  src="./images/choco/choco1.jpg"
-                  alt="Orange"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Orange</h4>
-                <p class="ourproducts-item-about">Dark chocolate</p>
-                <div class="ourproducts-item-price">45 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco2.jpg 1x, ./images/choco/choco2@2x.jpg 2x"
-                  src="./images/choco/choco2.jpg"
-                  alt="APPLE&CRANBERRY"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">APPLE&CRANBERRY</h4>
-                <p class="ourproducts-item-about">Milk chocolate</p>
-                <div class="ourproducts-item-price">50 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco3.jpg 1x, ./images/choco/choco3@2x.jpg 2x"
-                  src="./images/choco/choco3.jpg"
-                  alt="Lime&sea salt"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Lime&sea salt</h4>
-                <p class="ourproducts-item-about">Dark chocolate</p>
-                <div class="ourproducts-item-price">66 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco4.jpg 1x, ./images/choco/choco4@2x.jpg 2x"
-                  src="./images/choco/choco4.jpg"
-                  alt="Pineapple"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Pineapple</h4>
-                <p class="ourproducts-item-about">Dark chocolate</p>
-                <div class="ourproducts-item-price">54 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco5.jpg 1x, ./images/choco/choco5@2x.jpg 2x"
-                  src="./images/choco/choco5.jpg"
-                  alt="Classic"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Classic</h4>
-                <p class="ourproducts-item-about">Milk chocolate</p>
-                <div class="ourproducts-item-price">45 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco6.jpg 1x, ./images/choco/choco6@2x.jpg 2x"
-                  src="./images/choco/choco6.jpg"
-                  alt="Honey"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Honey</h4>
-                <p class="ourproducts-item-about">Milk chocolate</p>
-                <div class="ourproducts-item-price">50 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco7.jpg 1x, ./images/choco/choco7@2x.jpg 2x"
-                  src="./images/choco/choco7.jpg"
-                  alt="Roasted fruits"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Roasted fruits</h4>
-                <p class="ourproducts-item-about">Dark chocolate</p>
-                <div class="ourproducts-item-price">66 UAH</div>
-              </div>
-            </li>
-            <li>
-              <div class="ourproducts-item">
-                <img
-                  class="ourproducts-item-img"
-                  srcset="./images/choco/choco8.jpg 1x, ./images/choco/choco8@2x.jpg 2x"
-                  src="./images/choco/choco8.jpg"
-                  alt="Classic"
-                  loading="lazy"
-                  width="230"
-                  height="201"
-                />
-                <h4 class="ourproducts-item-type">Classic</h4>
-                <p class="ourproducts-item-about">White chocolate</p>
-                <div class="ourproducts-item-price">54 UAH</div>
-              </div>
-            </li>
-          </ul>
-          <ul class="ourproducts-item-check">
-            <li class="ourproducts-item-check-item active"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-            <li class="ourproducts-item-check-item"></li>
-          </ul>
-        </div>
-      </section>
-      <section class="topsellers" id="topsellers">
-        <div class="container">
-          <h2 class="topsel_title"><span class="orange_text">TOP</span> SELLERS</h2>
-          <div class="topsel-box-img">
-            <div class="topsel_img">
-              <picture>
-                <source
-                  srcset="./images/mobile/image1.jpg 1x, ./images/mobile/image1@2x.jpg 2x"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="./images/tablet/image1.jpg 1x, ./images/tablet/image1@2x.jpg 2x"
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="./images/desktop/image1.jpg 1x, ./images/desktop/image1@2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <img src="./images/desktop/image1.jpg" alt="Chocolate 1" loading="lazy" />
-              </picture>
-            </div>
-            <p class="topsel_text">
-              Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
-              Cacao has been around for thousands of years and was first discovered by the Native
-              American tribe called the Mayans.
-            </p>
-            <div class="topsel_img">
-              <picture>
-                <source
-                  srcset="./images/mobile/image2.jpg 1x, ./images/mobile/image2@2x.jpg 2x"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcset="./images/tablet/image2.jpg 1x, ./images/tablet/image2@2x.jpg 2x"
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="./images/desktop/image2.jpg 1x, ./images/desktop/image2@2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <img src="./images/desktop/image2.jpg" alt="Chocolate 2" loading="lazy" />
-              </picture>
-            </div>
-            <div class="topsel_img img3">
-              <img
-                srcset="./images/desktop/image3.jpg 1x, ./images/desktop/image3@2x.jpg 2x"
-                src="./images/desktop/image3.jpg"
-                alt="Chocolate 3"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <button class="buynow button_style" type="button" id="open-buynow2">Buy now</button>
-        </div>
-      </section>
-      <section class="feedback" id="feedback">
-        <div class="container">
-          <h2 class="feedback_title"><span class="orange_text">CHOCOLATE</span> IS LOVED</h2>
-          <ul class="feedback-item-box">
-            <l1>
-              <div class="feedback-item">
-                <img
-                  class="feedback-item-img"
-                  srcset="./images/review/victoria.jpg 1x, ./images/review/victoria@2x.jpg 2x"
-                  src="./images/review/victoria.jpg"
-                  alt="Victoria"
-                  loading="lazy"
-                  width="80"
-                  height="80"
-                />
-                <h4 class="feedback-item-name">Victoria Dobrzhanska</h4>
-                <p class="feedback-item-feed">
-                  I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
-                  thin layer chocolate.
-                </p>
-              </div>
-            </l1>
-            <l1>
-              <div class="feedback-item">
-                <img
-                  class="feedback-item-img"
-                  srcset="./images/review/nazar.jpg 1x, ./images/review/nazar@2x.jpg 2x"
-                  src="./images/review/nazar.jpg"
-                  alt="Nazar"
-                  loading="lazy"
-                  width="80"
-                  height="80"
-                />
-                <h4 class="feedback-item-name">Nazar Babenko</h4>
-                <p class="feedback-item-feed">
-                  This chocolate confection is a delight! A delight! The wafer is light and crisp,
-                  the hazelnut cream is smooth, and the chocolate is good.
-                </p>
-              </div>
-            </l1>
-            <l1>
-              <div class="feedback-item">
-                <img
-                  class="feedback-item-img"
-                  srcset="./images/review/olena.jpg 1x, ./images/review/olena@2x.jpg 2x"
-                  src="./images/review/olena.jpg"
-                  alt="Olena"
-                  loading="lazy"
-                  width="80"
-                  height="80"
-                />
-                <h4 class="feedback-item-name">Olena Kampusch</h4>
-                <p class="feedback-item-feed">
-                  Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
-                  creaminess inside. The wafer is soft but crunchy.
-                </p>
-              </div></l1
-            >
-          </ul>
-          <ul class="feedback-item-check">
-            <li class="feedback-item-check-item active"></li>
-            <li class="feedback-item-check-item"></li>
-            <li class="feedback-item-check-item"></li>
-          </ul>
-          <button class="feed button_style" type="button" id="open-review">Leave a review</button>
-        </div>
-      </section>
-      <section class="subscribe container">
-        <div class="content">
-          <h2 class="subs_main">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
-          <p class="subs_text">
-            From the velvety texture to the rich and complex flavor, our New Chocolate is a true
-            indulgence that will leave you craving more. Made with only the finest ingredients and
-            handcrafted with the utmost care, each piece is a work of art that is sure to please.
-          </p>
-          <button class="subs button_style" type="button" id="open-subs">Subscribe</button>
-        </div>
-      </section>
-    </main>
-    <footer class="footer container" id="footer">
-      <div class="footer_info">
-        <h2 class="footer_text">
-          <span class="orange_text">Chocolate</span> a delicious cure for a bad day
-        </h2>
-        <div class="footer_contact_sect">
-          <div class="footer_contact_block">
-            <h4 class="footer_contact">Contact us</h4>
-            <ul class="icon_block">
-              <li class="social-link">
-                <a
-                  class="link"
-                  href=""
-                  target="_blank"
-                  rel="noopener no-refferrer"
-                  aria-label="Instagram"
-                >
-                  <svg width="22px" height="22px" aria-label="Instagram">
-                    <use href="./images/spraite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-link">
-                <a
-                  class="link"
-                  href=""
-                  target="_blank"
-                  rel="noopener no-refferrer"
-                  aria-label="Twitter"
-                >
-                  <svg width="22" height="22" aria-label="Twitter">
-                    <use href="./images/spraite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Контакт -->
-          <address class="address">
-            <ul class="list nav-menu">
-              <li class="tel">
-                <a class="link contact" href="tel:+380684439426">+380 (68) 443-94-26</a>
-              </li>
-              <li class="email">
-                <a class="link contact" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-      </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simply Chocolate</title>
+		<meta name="description" content="Goit-commadn project" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="logo_menu">
+					<div class="logo-box">
+						<p class="logotext">SIMPLY CHOCOLATE</p>
+						<svg class="logo-svg">
+							<use href="./images/spraite.svg#icon-chocolate"></use>
+						</svg>
+					</div>
+					<button
+						type="button"
+						class="mobile-menu js-open-menu"
+						aria-expanded="false"
+						aria-label="Mobile menu"
+					>
+						<svg class="mobile-menu-icon" width="21px" height="14px" aria-label="Menu">
+							<use href="./images/spraite.svg#icon-menu"></use>
+						</svg>
+					</button>
+				</div>
+				<nav class="header_menu_nav js-menu-container" id="mobile-menu">
+					<button
+						type="button"
+						class="mobile-menu-close js-close-menu"
+						aria-label="Close"
+					>
+						<svg class="mobile-menu-icon" aria-label="Close">
+							<use href="./images/spraite.svg#icon-close"></use>
+						</svg>
+					</button>
+					<ul class="header_menu">
+						<li class="header_menu-item js-menu-item">
+							<a class="link" href="#home" aria-label="Home">Home</a>
+						</li>
+						<li class="header_menu-item js-menu-item">
+							<a class="link" href="#howtomade" aria-label="How it's made?"
+								>How it's made?</a
+							>
+						</li>
+						<li class="header_menu-item js-menu-item">
+							<a class="link" href="#ourproducts" aria-label="Our products"
+								>Our products</a
+							>
+						</li>
+						<li class="header_menu-item js-menu-item">
+							<a class="link" href="#topsellers" aria-label="Top sellers"
+								>Top sellers</a
+							>
+						</li>
+						<li class="header_menu-item js-menu-item">
+							<a class="link" href="#feedback" aria-label="Chocolate is loved"
+								>Chocolate is loved</a
+							>
+						</li>
+					</ul>
+					<ul class="social-links">
+						<li class="social-link">
+							<a
+								class="link icon"
+								href=""
+								target="_blank"
+								rel="noopener no-refferrer"
+								aria-label="Instagram"
+							>
+								<svg class="social-svg" aria-label="Instagram">
+									<use href="./images/spraite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link">
+							<a
+								class="link icon"
+								href=""
+								target="_blank"
+								rel="noopener no-refferrer"
+								aria-label="Twitter"
+							>
+								<svg class="social-svg" aria-label="Twitter">
+									<use href="./images/spraite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="main container" id="home">
+				<div class="main-bg">
+					<h1 class="visually-hidden">Greet chocolate</h1>
+					<h3 class="main-text">
+						Treat yourself or a loved one to <span class="break"><br /></span>our finest
+						ingredients for a moment of pure delight!
+					</h3>
+					<ul class="main-button">
+						<li class="main-butt">
+							<button class="buynow button_style" type="button" id="open-buynow1">
+								Buy now
+							</button>
+							<a class="howmade button_style" href="#howtomade">How it's made</a>
+						</li>
+						<li class="main-scroll-block">
+							<p class="main-scroll">scroll down</p>
+							<a class="main-scroll-cont" href="#footer" aria-label="Scroll down">
+								<svg class="main-scroll-icon" aria-label="Scroll">
+									<use href="./images/spraite.svg#icon-scroll"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="about container">
+				<h2 class="visually-hidden">Advantages</h2>
+				<ul class="about_list">
+					<li class="about_list-item">
+						<div class="about-icon-box">
+							<svg class="about-icon" width="28" height="28">
+								<use href="./images/spraite.svg#icon-about_1"></use>
+							</svg>
+						</div>
+						<h3 class="about_text">Unsurpassed taste</h3>
+						<p class="about_text_parag">
+							Crafted with the finest quality cocoa beans and a dedication to
+							perfection, each bite is a decadent experience that simply cannot be
+							matched. Savor the richness and complexity of our Unsurpassed Taste and
+							discover a new level of chocolate bliss.
+						</p>
+					</li>
+					<li class="about_list-item">
+						<div class="about-icon-box">
+							<svg class="about-icon" width="28" height="28">
+								<use href="./images/spraite.svg#icon-about_2"></use>
+							</svg>
+						</div>
+						<h3 class="about_text">Affordable price</h3>
+						<p class="about_text_parag">
+							Indulge in high-quality chocolate without breaking the bank with Simply
+							Chocolate's selection of affordable treats. Enjoy mouth-watering
+							truffles and velvety chocolate bars without sacrificing taste or
+							quality. Browse our selection and indulge in affordable luxury today.
+						</p>
+					</li>
+					<li class="about_list-item">
+						<div class="about-icon-box">
+							<svg class="about-icon" width="28" height="28">
+								<use href="./images/spraite.svg#icon-about_3"></use>
+							</svg>
+						</div>
+						<h3 class="about_text">Own production</h3>
+						<p class="about_text_parag">
+							We take pride in our own production process, ensuring that every step is
+							carefully crafted to perfection. From selecting the finest ingredients
+							to handcrafting each piece, our attention to detail is evident in every
+							bite.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="ingradient">
+				<div class="container">
+					<h2 class="ing_text">
+						IT ALL ADDS UP TO ONE EXCEPTIONAL
+						<span class="orange_text">TASTE</span> SENSATION
+					</h2>
+					<p class="ing_parag">
+						At Simply Chocolate, we believe that the secret to exceptional chocolate is
+						in the details. From the sourcing of the finest ingredients to the careful
+						crafting of each individual piece, every step of our process adds up to one
+						exceptional taste sensation.
+					</p>
+					<ul class="ing_list">
+						<li class="ing_list_item">
+							<div class="ing_list_item-main">
+								<picture>
+									<source
+										srcset="./images/mobile/ing_1.png"
+										media="(max-width: 1199px)"
+									/>
+									<source
+										srcset="./images/desktop/ing_1.png"
+										media="(min-width: 1200px)"
+									/>
+									<img
+										class="ing_img"
+										src="./images/desktop/ing_1.png"
+										alt="Ingradient 1"
+										loading="lazy"
+									/>
+								</picture>
+								<p class="ing_img_text white">MILK CHOCOLATE</p>
+							</div>
+							<div class="ing_list_item-about">
+								<h4 class="ing_list_item-about-title">Milk Chocolate</h4>
+								<ul class="ing_list_item-about-buttons">
+									<li class="ing_list_item-about-button">chocolate</li>
+									<li class="ing_list_item-about-button">the benefits</li>
+								</ul>
+								<p class="ing_list_item-about-text">
+									Milk chocolate is a solid chocolate confectionery containing
+									cocoa, sugar and milk. It is the most consumed type of
+									chocolate. Chocolate was originally sold and consumed as a
+									beverage in pre-Columbian times. Although four-fifths of all
+									milk chocolate is sold in the United States and Europe.
+								</p>
+							</div>
+						</li>
+						<li class="ing_list_item">
+							<div class="ing_list_item-main">
+								<picture>
+									<source
+										srcset="./images/mobile/ing_2.png"
+										media="(max-width: 1199px)"
+									/>
+									<source
+										srcset="./images/desktop/ing_2.png"
+										media="(min-width: 1200px)"
+									/>
+									<img
+										class="ing_img"
+										src="./images/desktop/ing_2.png"
+										alt="Ingradient 2"
+										loading="lazy"
+									/>
+								</picture>
+								<p class="ing_img_text">MILK</p>
+							</div>
+							<div class="ing_list_item-about">
+								<h4 class="ing_list_item-about-title">Milk</h4>
+								<ul class="ing_list_item-about-buttons">
+									<li class="ing_list_item-about-button">Milk</li>
+									<li class="ing_list_item-about-button">the benefits</li>
+								</ul>
+								<p class="ing_list_item-about-text">
+									Milk is a white liquid food produced by the mammary glands of
+									mammals. It is the primary source of nutrition for young mammals
+									(including breastfed human infants) before they are able to
+									digest solid food.Early-lactation milk, which is called
+									colostrum, contains antibodies that strengthen the immune
+									system.
+								</p>
+							</div>
+						</li>
+						<li class="ing_list_item">
+							<div class="ing_list_item-main">
+								<picture>
+									<source
+										srcset="./images/mobile/ing_3.png"
+										media="(max-width: 1199px)"
+									/>
+									<source
+										srcset="./images/desktop/ing_3.png"
+										media="(min-width: 1200px)"
+									/>
+									<img
+										class="ing_img"
+										src="./images/desktop/ing_3.png"
+										alt="Ingradient 3"
+										loading="lazy"
+									/>
+								</picture>
+								<p class="ing_img_text white">NUTS</p>
+							</div>
+							<div class="ing_list_item-about">
+								<h4 class="ing_list_item-about-title">Nuts</h4>
+								<ul class="ing_list_item-about-buttons">
+									<li class="ing_list_item-about-button">nuts</li>
+									<li class="ing_list_item-about-button">the benefits</li>
+								</ul>
+								<p class="ing_list_item-about-text">
+									Almonds, pistachios, and walnuts are some types of nuts that
+									contain healthy nutrients. When eaten as part of a
+									nutrient-dense diet, these 9 nuts may offer benefits such as
+									reducing your risk of heart disease. They’re a good source of
+									fiber, healthy fats, and plant protein. Plus, they’re great on
+									their own.
+								</p>
+							</div>
+						</li>
+						<li class="ing_list_item">
+							<div class="ing_list_item-main">
+								<picture>
+									<source
+										srcset="./images/mobile/ing_4.png"
+										media="(max-width: 1199px)"
+									/>
+									<source
+										srcset="./images/desktop/ing_4.png"
+										media="(min-width: 1200px)"
+									/>
+									<img
+										class="ing_img"
+										src="./images/desktop/ing_4.png"
+										alt="Ingradient 4"
+										loading="lazy"
+									/>
+								</picture>
+								<p class="ing_img_text">SEMI - SWEET CHOCOLATE</p>
+							</div>
+							<div class="ing_list_item-about">
+								<h4 class="ing_list_item-about-title">Semi - sweet chocolate</h4>
+								<ul class="ing_list_item-about-buttons">
+									<li class="ing_list_item-about-button">sweet chocolate</li>
+									<li class="ing_list_item-about-button">the benefits</li>
+								</ul>
+								<p class="ing_list_item-about-text">
+									Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One
+									of the best ways to gain an understanding of this type of
+									chocolate is to compare it to a different type of chocolate.
+									Semisweet is darker than milk chocolate. In a taste comparison,
+									it has a slightly bitter taste whereas milk chocolate is sweeter
+									and more mellow.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="container" id="howtomade">
+				<div class="">
+					<h2 class="howtomade_title">HOW IT'S <span class="orange_text">MADE?</span></h2>
+					<div class="howtomade_content">
+						<div class="howtomade_img">
+							<iframe
+								src="https://player.vimeo.com/video/679987878?h=9d9971d226&color=ffffff&title=0&byline=0&portrait=0"
+								width="711"
+								height="400"
+								frameborder="0"
+								allow="autoplay; fullscreen; picture-in-picture"
+							></iframe>
+						</div>
+						<div class="howtomade">
+							<h3 class="howtomade_main">
+								Try our chocolates today and
+								<span class="break"><br /></span>discover the perfect balance of
+								flavor
+							</h3>
+							<ul class="howtomade_list">
+								<li class="howtomade_list_item">
+									<span class="howtomade_text">
+										Heat the milk in a saucepan without bringing it to a boil.
+										Add sugar and cocoa powder.
+									</span>
+								</li>
+								<li class="howtomade_list_item">
+									<span class="howtomade_text">
+										At the same time, prepare a water bath. Melt the butter on
+										it.
+									</span>
+								</li>
+								<li class="howtomade_list_item">
+									<span class="howtomade_text">
+										"Mix" the milk mixture and already liquid butter. Mix
+										thoroughly with a silicone spatula so that the mass becomes
+										uniform and silky.
+									</span>
+								</li>
+								<li class="howtomade_list_item">
+									<span class="howtomade_text"
+										>Heat the mixture over low heat, letting it barely
+										boil.</span
+									>
+								</li>
+								<li class="howtomade_list_item">
+									<span class="howtomade_text">
+										Pour the chocolate into special containers (can be replaced
+										with ice molds). Allow to cool and harden.
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ourproducts" id="ourproducts">
+				<div class="container">
+					<h2 class="ourprod_title">OUR <span class="orange_text">PRODUCTS</span></h2>
+					<ul class="ourproducts-item-box">
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco1.jpg    1x,
+										./images/choco/choco1@2x.jpg 2x
+									"
+									src="./images/choco/choco1.jpg"
+									alt="Orange"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Orange</h4>
+								<p class="ourproducts-item-about">Dark chocolate</p>
+								<div class="ourproducts-item-price">45 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco2.jpg    1x,
+										./images/choco/choco2@2x.jpg 2x
+									"
+									src="./images/choco/choco2.jpg"
+									alt="APPLE&CRANBERRY"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">APPLE&CRANBERRY</h4>
+								<p class="ourproducts-item-about">Milk chocolate</p>
+								<div class="ourproducts-item-price">50 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco3.jpg    1x,
+										./images/choco/choco3@2x.jpg 2x
+									"
+									src="./images/choco/choco3.jpg"
+									alt="Lime&sea salt"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Lime&sea salt</h4>
+								<p class="ourproducts-item-about">Dark chocolate</p>
+								<div class="ourproducts-item-price">66 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco4.jpg    1x,
+										./images/choco/choco4@2x.jpg 2x
+									"
+									src="./images/choco/choco4.jpg"
+									alt="Pineapple"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Pineapple</h4>
+								<p class="ourproducts-item-about">Dark chocolate</p>
+								<div class="ourproducts-item-price">54 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco5.jpg    1x,
+										./images/choco/choco5@2x.jpg 2x
+									"
+									src="./images/choco/choco5.jpg"
+									alt="Classic"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Classic</h4>
+								<p class="ourproducts-item-about">Milk chocolate</p>
+								<div class="ourproducts-item-price">45 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco6.jpg    1x,
+										./images/choco/choco6@2x.jpg 2x
+									"
+									src="./images/choco/choco6.jpg"
+									alt="Honey"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Honey</h4>
+								<p class="ourproducts-item-about">Milk chocolate</p>
+								<div class="ourproducts-item-price">50 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco7.jpg    1x,
+										./images/choco/choco7@2x.jpg 2x
+									"
+									src="./images/choco/choco7.jpg"
+									alt="Roasted fruits"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Roasted fruits</h4>
+								<p class="ourproducts-item-about">Dark chocolate</p>
+								<div class="ourproducts-item-price">66 UAH</div>
+							</div>
+						</li>
+						<li>
+							<div class="ourproducts-item">
+								<img
+									class="ourproducts-item-img"
+									srcset="
+										./images/choco/choco8.jpg    1x,
+										./images/choco/choco8@2x.jpg 2x
+									"
+									src="./images/choco/choco8.jpg"
+									alt="Classic"
+									loading="lazy"
+									width="230"
+									height="201"
+								/>
+								<h4 class="ourproducts-item-type">Classic</h4>
+								<p class="ourproducts-item-about">White chocolate</p>
+								<div class="ourproducts-item-price">54 UAH</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="ourproducts-item-check">
+						<li class="ourproducts-item-check-item active"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+						<li class="ourproducts-item-check-item"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="topsellers" id="topsellers">
+				<div class="container">
+					<h2 class="topsel_title"><span class="orange_text">TOP</span> SELLERS</h2>
+					<div class="topsel-box-img">
+						<div class="topsel_img">
+							<picture>
+								<source
+									srcset="
+										./images/mobile/image1.jpg    1x,
+										./images/mobile/image1@2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/image1.jpg    1x,
+										./images/tablet/image1@2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/image1.jpg    1x,
+										./images/desktop/image1@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									src="./images/desktop/image1.jpg"
+									alt="Chocolate 1"
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<p class="topsel_text">
+							Crazy enough chocolate originates from a bean just like the coffee bean
+							called Cacao. Cacao has been around for thousands of years and was first
+							discovered by the Native American tribe called the Mayans.
+						</p>
+						<div class="topsel_img">
+							<picture>
+								<source
+									srcset="
+										./images/mobile/image2.jpg    1x,
+										./images/mobile/image2@2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/image2.jpg    1x,
+										./images/tablet/image2@2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/image2.jpg    1x,
+										./images/desktop/image2@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									src="./images/desktop/image2.jpg"
+									alt="Chocolate 2"
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<div class="topsel_img img3">
+							<img
+								srcset="
+									./images/desktop/image3.jpg    1x,
+									./images/desktop/image3@2x.jpg 2x
+								"
+								src="./images/desktop/image3.jpg"
+								alt="Chocolate 3"
+								loading="lazy"
+							/>
+						</div>
+					</div>
+					<button class="buynow button_style" type="button" id="open-buynow2">
+						Buy now
+					</button>
+				</div>
+			</section>
+			<section class="feedback" id="feedback">
+				<div class="container">
+					<h2 class="feedback_title">
+						<span class="orange_text">CHOCOLATE</span> IS LOVED
+					</h2>
+					<ul class="feedback-item-box">
+						<l1>
+							<div class="feedback-item">
+								<img
+									class="feedback-item-img"
+									srcset="
+										./images/review/victoria.jpg    1x,
+										./images/review/victoria@2x.jpg 2x
+									"
+									src="./images/review/victoria.jpg"
+									alt="Victoria"
+									loading="lazy"
+									width="80"
+									height="80"
+								/>
+								<h4 class="feedback-item-name">Victoria Dobrzhanska</h4>
+								<p class="feedback-item-feed">
+									I love this chocolate bar. Perfect combination of light crispy
+									wafer, covered in a thin layer chocolate.
+								</p>
+							</div>
+						</l1>
+						<l1>
+							<div class="feedback-item">
+								<img
+									class="feedback-item-img"
+									srcset="
+										./images/review/nazar.jpg    1x,
+										./images/review/nazar@2x.jpg 2x
+									"
+									src="./images/review/nazar.jpg"
+									alt="Nazar"
+									loading="lazy"
+									width="80"
+									height="80"
+								/>
+								<h4 class="feedback-item-name">Nazar Babenko</h4>
+								<p class="feedback-item-feed">
+									This chocolate confection is a delight! A delight! The wafer is
+									light and crisp, the hazelnut cream is smooth, and the chocolate
+									is good.
+								</p>
+							</div>
+						</l1>
+						<l1>
+							<div class="feedback-item">
+								<img
+									class="feedback-item-img"
+									srcset="
+										./images/review/olena.jpg    1x,
+										./images/review/olena@2x.jpg 2x
+									"
+									src="./images/review/olena.jpg"
+									alt="Olena"
+									loading="lazy"
+									width="80"
+									height="80"
+								/>
+								<h4 class="feedback-item-name">Olena Kampusch</h4>
+								<p class="feedback-item-feed">
+									Chocolate is a family favourite treat. Love the delicious smooth
+									chocolate and the creaminess inside. The wafer is soft but
+									crunchy.
+								</p>
+							</div></l1
+						>
+					</ul>
+					<ul class="feedback-item-check">
+						<li class="feedback-item-check-item active"></li>
+						<li class="feedback-item-check-item"></li>
+						<li class="feedback-item-check-item"></li>
+					</ul>
+					<button class="feed button_style" type="button" id="open-review">
+						Leave a review
+					</button>
+				</div>
+			</section>
+			<section class="subscribe container">
+				<div class="content">
+					<h2 class="subs_main">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+					<p class="subs_text">
+						From the velvety texture to the rich and complex flavor, our New Chocolate
+						is a true indulgence that will leave you craving more. Made with only the
+						finest ingredients and handcrafted with the utmost care, each piece is a
+						work of art that is sure to please.
+					</p>
+					<button class="subs button_style" type="button" id="open-subs">
+						Subscribe
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer container" id="footer">
+			<div class="footer_info">
+				<h2 class="footer_text">
+					<span class="orange_text">Chocolate</span> a delicious cure for a bad day
+				</h2>
+				<div class="footer_contact_sect">
+					<div class="footer_contact_block">
+						<h4 class="footer_contact">Contact us</h4>
+						<ul class="icon_block">
+							<li class="social-link">
+								<a
+									class="link"
+									href=""
+									target="_blank"
+									rel="noopener no-refferrer"
+									aria-label="Instagram"
+								>
+									<svg width="22px" height="22px" aria-label="Instagram">
+										<use href="./images/spraite.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-link">
+								<a
+									class="link"
+									href=""
+									target="_blank"
+									rel="noopener no-refferrer"
+									aria-label="Twitter"
+								>
+									<svg width="22" height="22" aria-label="Twitter">
+										<use href="./images/spraite.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Контакт -->
+					<address class="address">
+						<ul class="list nav-menu">
+							<li class="tel">
+								<a class="link contact" href="tel:+380684439426"
+									>+380 (68) 443-94-26</a
+								>
+							</li>
+							<li class="email">
+								<a class="link contact" href="mailto:simplychoc@gmail.com"
+									>simplychoc@gmail.com</a
+								>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
 
-      <nav class="footer_nav_menu">
-        <ul class="footer_menu">
-          <li>
-            <a class="link menu_item" href="#home" aria-label="Home">Home</a>
-          </li>
-          <li>
-            <a class="link menu_item" href="#howtomade" aria-label="How it's made?"
-              >How it's made?</a
-            >
-          </li>
-          <li>
-            <a class="link menu_item" href="#ourproducts" aria-label="Our products">Our products</a>
-          </li>
-          <li>
-            <a class="link menu_item" href="#topsellers" aria-label="Top sellers">Top sellers</a>
-          </li>
-          <li>
-            <a class="link menu_item" href="#feedback" aria-label="Chocolate is loved"
-              >Chocolate is loved</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </footer>
-    <!-- Модальные окна -->
-    <div id="buynow" class="modal">
-      <div class="window-buynow">
-        <button class="close" type="button" aria-label="Close">
-          <svg class="icon-modal">
-            <use href="./images/spraite.svg#icon-x-close"></use>
-          </svg>
-        </button>
-        <h2 class="buynow-title-text"><span class="orange_text">BUY</span> NOW</h2>
-        <ul class="buynow-goods">
-          <li class="buynow-goods-items">
-            <picture>
-              <source srcset="./images/mobile/choco1.png" media="(max-width: 767px)" />
-              <source srcset="./images/tablet/choco1.png" media="(min-width: 768px)" />
-              <img
-                class="buy_img"
-                src="./images/tablet/choco1.png"
-                alt="Chocolate 1"
-                loading="lazy"
-              />
-            </picture>
-            <div class="buynow-goods-weight">100 g</div>
-          </li>
-          <li class="buynow-goods-items">
-            <picture>
-              <source srcset="./images/mobile/choco2.png" media="(max-width: 767px)" />
-              <source srcset="./images/tablet/choco2.png" media="(min-width: 768px)" />
-              <img
-                class="buy_img"
-                src="./images/tablet/choco2.png"
-                alt="Chocolate 2"
-                loading="lazy"
-              />
-            </picture>
-            <div class="buynow-goods-weight">200 g</div>
-          </li>
-          <li class="buynow-goods-items">
-            <picture>
-              <source srcset="./images/mobile/choco3.png" media="(max-width: 767px)" />
-              <source srcset="./images/tablet/choco3.png" media="(min-width: 768px)" />
-              <img
-                class="buy_img"
-                src="./images/tablet/choco3.png"
-                alt="Chocolate 3"
-                loading="lazy"
-              />
-            </picture>
-            <div class="buynow-goods-weight">300 g</div>
-          </li>
-        </ul>
-        <form class="buynow-form" method="post" autocomplete="on">
-          <div class="buynow-form-contact-info">
-            <label for="buynow-name" class="buynow-form-label">
-              Personal information
-              <input
-                class="buynow-form-item"
-                type="text"
-                id="buynow-name"
-                name="buynow-name"
-                placeholder="Name"
-              />
-            </label>
-            <label for="surname">
-              <input
-                class="buynow-form-item"
-                type="text"
-                id="surname"
-                name="surname"
-                placeholder="Surname"
-            /></label>
-          </div>
-          <label for="buynow-email" class="buynow-form-label">
-            Email
-            <input
-              class="buynow-form-item"
-              type="email"
-              id="buynow-email"
-              name="buynow-email"
-              placeholder="Enter your email"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              required
-              title="Please correct email"
-            />
-          </label>
-          <div style="position: relative">
-            <div class="phone-prefix">
-              <svg class="icon-modal" width="24px" height="18px">
-                <use href="./images/spraite.svg#icon-flag"></use>
-              </svg>
-              <span class="phone-text">+380</span>
-            </div>
-            <p class="buynow-form-label">Phone number</p>
-            <input
-              class="buynow-form-item"
-              type="tel"
-              id="buynow-phone"
-              name="buynow-phone"
-              placeholder="Phone number"
-              pattern="[1-9]{9}"
-              required
-              title="Please correct phone"
-            />
-          </div>
-          <div style="position: relative">
-            <p class="buynow-form-label">Card number</p>
-            <div class="card-prefix">
-              <svg class="icon-modal" width="22px" height="12px">
-                <use href="./images/spraite.svg#icon-mastercard"></use>
-              </svg>
-            </div>
-            <input
-              class="buynow-form-item"
-              type="tel"
-              id="buynow-mastercard"
-              name="phone"
-              placeholder="Enter card"
-              pattern="[0-9]{16}"
-              required
-              title="Please correct phone"
-            />
-          </div>
-          <label class="buynow-form-label">
-            Comment
-            <textarea
-              class="buynow-form-item-text"
-              id="buynow-text"
-              name="text"
-              rows="1"
-              placeholder="Enter text"
-            ></textarea>
-          </label>
-        </form>
-        <button class="buynow-button" type="button" aria-label="Submit" id="Submit">Submit</button>
-      </div>
-      <div id="overlay-buynow_w" class="overlay"></div>
-    </div>
-    <div id="review" class="modal">
-      <div class="window-review">
-        <button class="close" type="button" aria-label="Close">
-          <svg class="icon-modal">
-            <use href="./images/spraite.svg#icon-x-close"></use>
-          </svg>
-        </button>
-        <h2 class="review-title">
-          leave a review <span class="review-break"><br /></span>about
-          <span class="orange_text">our chocolate</span>
-        </h2>
-        <form class="review-form" method="post" autocomplete="on">
-          <label for="review-name">
-            <input
-              class="review-form-item"
-              type="text"
-              id="review-name"
-              name="review-name"
-              placeholder="Name"
-            />
-          </label>
-          <label for="review-email">
-            <input
-              class="review-form-item"
-              type="email"
-              id="review-email"
-              name="review-email"
-              placeholder="Enter your email"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              required
-              title="Please correct email"
-            />
-          </label>
-          <div style="position: relative">
-            <label for="review-phone"></label>
-            <div class="phone-prefix">
-              <svg class="icon-modal" width="24px" height="18px">
-                <use href="./images/spraite.svg#icon-flag"></use>
-              </svg>
-              <span class="phone-text">+380</span>
-            </div>
-            <input
-              class="review-form-item"
-              type="tel"
-              id="review-phone"
-              name="review-phone"
-              placeholder="Phone number"
-              pattern="[1-9]{9}"
-              required
-              title="Please correct phone"
-            />
-          </div>
-          <textarea
-            class="review-form-item-text"
-            id="review-text"
-            name="review-text"
-            rows="1"
-            placeholder="Enter text"
-          ></textarea>
-          <button class="review-button" type="button" aria-label="Send" id="Send">Send</button>
-        </form>
-      </div>
-      <div id="overlay-review_w" class="overlay"></div>
-    </div>
-    <div id="subs" class="modal">
-      <div class="window-subs">
-        <button class="close" type="button" aria-label="Close">
-          <svg class="icon-modal">
-            <use href="./images/spraite.svg#icon-x-close"></use>
-          </svg>
-        </button>
-        <picture>
-          <source
-            srcset="
-              ./images/mobile/subscribe-window.jpg    1x,
-              ./images/mobile/subscribe-window@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ./images/tablet/subscribe-window.jpg    1x,
-              ./images/tablet/subscribe-window@2x.jpg 2x
-            "
-            media="(max-width: 1199px)"
-          />
-          <source
-            srcset="
-              ./images/desktop/subscribe-window.jpg    1x,
-              ./images/desktop/subscribe-window@2x.jpg 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <img src="./images/desktop/subscribe-window.jpg " alt="Chocolate" loading="lazy" />
-        </picture>
-        <h2 class="subs-title">
-          Explore our<span class="orange_text"><br />new chocolate</span> first!
-        </h2>
-        <div class="subs-submit">
-          <label for="submitinput"></label>
-          <input
-            class="subs-input"
-            type="email"
-            id="submitinput"
-            placeholder="Enter your email"
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-            required
-            title="Please correct email"
-          />
-          <button class="subs-button" type="button" aria-label="Subscribe" id="Subscribe">
-            Subscribe
-          </button>
-        </div>
-      </div>
-      <div id="overlay-subs_w" class="overlay"></div>
-    </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/sweeper-topseller.js"></script>
-    <script src="./js/sweeper-review.js"></script>
-  </body>
+			<nav class="footer_nav_menu">
+				<ul class="footer_menu">
+					<li>
+						<a class="link menu_item" href="#home" aria-label="Home">Home</a>
+					</li>
+					<li>
+						<a class="link menu_item" href="#howtomade" aria-label="How it's made?"
+							>How it's made?</a
+						>
+					</li>
+					<li>
+						<a class="link menu_item" href="#ourproducts" aria-label="Our products"
+							>Our products</a
+						>
+					</li>
+					<li>
+						<a class="link menu_item" href="#topsellers" aria-label="Top sellers"
+							>Top sellers</a
+						>
+					</li>
+					<li>
+						<a class="link menu_item" href="#feedback" aria-label="Chocolate is loved"
+							>Chocolate is loved</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<!-- Модальные окна -->
+		<div id="buynow" class="modal">
+			<div class="window-buynow">
+				<button class="close" type="button" aria-label="Close">
+					<svg class="icon-modal">
+						<use href="./images/spraite.svg#icon-x-close"></use>
+					</svg>
+				</button>
+				<h2 class="buynow-title-text"><span class="orange_text">BUY</span> NOW</h2>
+				<ul class="buynow-goods">
+					<li class="buynow-goods-items">
+						<picture>
+							<source
+								srcset="./images/mobile/choco1.png"
+								media="(max-width: 767px)"
+							/>
+							<source
+								srcset="./images/tablet/choco1.png"
+								media="(min-width: 768px)"
+							/>
+							<img
+								class="buy_img"
+								src="./images/tablet/choco1.png"
+								alt="Chocolate 1"
+								loading="lazy"
+							/>
+						</picture>
+						<div class="buynow-goods-weight">100 g</div>
+					</li>
+					<li class="buynow-goods-items">
+						<picture>
+							<source
+								srcset="./images/mobile/choco2.png"
+								media="(max-width: 767px)"
+							/>
+							<source
+								srcset="./images/tablet/choco2.png"
+								media="(min-width: 768px)"
+							/>
+							<img
+								class="buy_img"
+								src="./images/tablet/choco2.png"
+								alt="Chocolate 2"
+								loading="lazy"
+							/>
+						</picture>
+						<div class="buynow-goods-weight">200 g</div>
+					</li>
+					<li class="buynow-goods-items">
+						<picture>
+							<source
+								srcset="./images/mobile/choco3.png"
+								media="(max-width: 767px)"
+							/>
+							<source
+								srcset="./images/tablet/choco3.png"
+								media="(min-width: 768px)"
+							/>
+							<img
+								class="buy_img"
+								src="./images/tablet/choco3.png"
+								alt="Chocolate 3"
+								loading="lazy"
+							/>
+						</picture>
+						<div class="buynow-goods-weight">300 g</div>
+					</li>
+				</ul>
+				<form class="buynow-form" method="post" autocomplete="on">
+					<div class="buynow-form-contact-info">
+						<label for="buynow-name" class="buynow-form-label">
+							Personal information
+							<input
+								class="buynow-form-item"
+								type="text"
+								id="buynow-name"
+								name="buynow-name"
+								placeholder="Name"
+							/>
+						</label>
+						<label for="surname">
+							<input
+								class="buynow-form-item"
+								type="text"
+								id="surname"
+								name="surname"
+								placeholder="Surname"
+						/></label>
+					</div>
+					<label for="buynow-email" class="buynow-form-label">
+						Email
+						<input
+							class="buynow-form-item"
+							type="email"
+							id="buynow-email"
+							name="buynow-email"
+							placeholder="Enter your email"
+							pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+							required
+							title="Please correct email"
+						/>
+					</label>
+					<div style="position: relative">
+						<div class="phone-prefix">
+							<svg class="icon-modal" width="24px" height="18px">
+								<use href="./images/spraite.svg#icon-flag"></use>
+							</svg>
+							<span class="phone-text">+380</span>
+						</div>
+						<p class="buynow-form-label">Phone number</p>
+						<input
+							class="buynow-form-item"
+							type="tel"
+							id="buynow-phone"
+							name="buynow-phone"
+							placeholder="Phone number"
+							pattern="[1-9]{9}"
+							required
+							title="Please correct phone"
+						/>
+					</div>
+					<div style="position: relative">
+						<p class="buynow-form-label">Card number</p>
+						<div class="card-prefix">
+							<svg class="icon-modal" width="22px" height="12px">
+								<use href="./images/spraite.svg#icon-mastercard"></use>
+							</svg>
+						</div>
+						<input
+							class="buynow-form-item"
+							type="tel"
+							id="buynow-mastercard"
+							name="phone"
+							placeholder="Enter card"
+							pattern="[0-9]{16}"
+							required
+							title="Please correct phone"
+						/>
+					</div>
+					<label class="buynow-form-label">
+						Comment
+						<textarea
+							class="buynow-form-item-text"
+							id="buynow-text"
+							name="text"
+							rows="1"
+							placeholder="Enter text"
+						></textarea>
+					</label>
+				</form>
+				<button class="buynow-button" type="button" aria-label="Submit" id="Submit">
+					Submit
+				</button>
+			</div>
+			<div id="overlay-buynow_w" class="overlay"></div>
+		</div>
+		<div id="review" class="modal">
+			<div class="window-review">
+				<button class="close" type="button" aria-label="Close">
+					<svg class="icon-modal">
+						<use href="./images/spraite.svg#icon-x-close"></use>
+					</svg>
+				</button>
+				<h2 class="review-title">
+					leave a review <span class="review-break"><br /></span>about
+					<span class="orange_text">our chocolate</span>
+				</h2>
+				<form class="review-form" method="post" autocomplete="on">
+					<label for="review-name">
+						<input
+							class="review-form-item"
+							type="text"
+							id="review-name"
+							name="review-name"
+							placeholder="Name"
+						/>
+					</label>
+					<label for="review-email">
+						<input
+							class="review-form-item"
+							type="email"
+							id="review-email"
+							name="review-email"
+							placeholder="Enter your email"
+							pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+							required
+							title="Please correct email"
+						/>
+					</label>
+					<div style="position: relative">
+						<label for="review-phone"></label>
+						<div class="phone-prefix">
+							<svg class="icon-modal" width="24px" height="18px">
+								<use href="./images/spraite.svg#icon-flag"></use>
+							</svg>
+							<span class="phone-text">+380</span>
+						</div>
+						<input
+							class="review-form-item"
+							type="tel"
+							id="review-phone"
+							name="review-phone"
+							placeholder="Phone number"
+							pattern="[1-9]{9}"
+							required
+							title="Please correct phone"
+						/>
+					</div>
+					<textarea
+						class="review-form-item-text"
+						id="review-text"
+						name="review-text"
+						rows="1"
+						placeholder="Enter text"
+					></textarea>
+					<button class="review-button" type="button" aria-label="Send" id="Send">
+						Send
+					</button>
+				</form>
+			</div>
+			<div id="overlay-review_w" class="overlay"></div>
+		</div>
+		<div id="subs" class="modal">
+			<div class="window-subs">
+				<button class="close" type="button" aria-label="Close">
+					<svg class="icon-modal">
+						<use href="./images/spraite.svg#icon-x-close"></use>
+					</svg>
+				</button>
+				<picture>
+					<source
+						srcset="
+							./images/mobile/subscribe-window.jpg    1x,
+							./images/mobile/subscribe-window@2x.jpg 2x
+						"
+						media="(max-width: 767px)"
+					/>
+					<source
+						srcset="
+							./images/tablet/subscribe-window.jpg    1x,
+							./images/tablet/subscribe-window@2x.jpg 2x
+						"
+						media="(max-width: 1199px)"
+					/>
+					<source
+						srcset="
+							./images/desktop/subscribe-window.jpg    1x,
+							./images/desktop/subscribe-window@2x.jpg 2x
+						"
+						media="(min-width: 1200px)"
+					/>
+					<img
+						src="./images/desktop/subscribe-window.jpg "
+						alt="Chocolate"
+						loading="lazy"
+					/>
+				</picture>
+				<h2 class="subs-title">
+					Explore our<span class="orange_text"><br />new chocolate</span> first!
+				</h2>
+				<div class="subs-submit">
+					<label for="submitinput"></label>
+					<input
+						class="subs-input"
+						type="email"
+						id="submitinput"
+						placeholder="Enter your email"
+						pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+						required
+						title="Please correct email"
+					/>
+					<button class="subs-button" type="button" aria-label="Subscribe" id="Subscribe">
+						Subscribe
+					</button>
+				</div>
+			</div>
+			<div id="overlay-subs_w" class="overlay"></div>
+		</div>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script type="module" src="./js/mobile-menu.js"></script>
+		<script type="module" src="./js/modal.js"></script>
+		<script type="module" src="./js/sweeper-topseller.js"></script>
+		<script type="module" src="./js/sweeper-review.js"></script>
+	</body>
 </html>

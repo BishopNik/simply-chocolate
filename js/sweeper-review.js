@@ -36,6 +36,10 @@ function onScroll(e) {
 checkboxItemsFeedback.forEach((item, index) => {
 	item.dataset.id = index;
 	item.addEventListener('click', e => {
-		containerFeedback.scrollLeft = positionElement * Number(item.dataset.id);
+		const targetScrollLeft = positionElement * Number(item.dataset.id);
+		containerFeedback.scrollTo({
+			left: targetScrollLeft,
+			behavior: 'smooth',
+		});
 	});
 });

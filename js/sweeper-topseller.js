@@ -35,6 +35,10 @@ function onScroll(e) {
 checkboxItemsTopseller.forEach((item, index) => {
 	item.dataset.id = index;
 	item.addEventListener('click', e => {
-		ourproductsItemBox.scrollLeft = positionElement * Number(item.dataset.id);
+		const targetScrollLeft = positionElement * Number(item.dataset.id);
+		ourproductsItemBox.scrollTo({
+			left: targetScrollLeft,
+			behavior: 'smooth',
+		});
 	});
 });
